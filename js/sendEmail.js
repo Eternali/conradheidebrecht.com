@@ -16,7 +16,7 @@ function sendEmail () {
     req.open('POST', '/send_email');
     req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
-    let selfemail = 'crbheide@edu.uwaterloo.ca';  // stupid gmail, outlook, or domain.com is screwing me with forwarding: 'me@conradheidebrecht.com';
+    let selfemail = 'crbheide@edu.uwaterloo.ca';
     let name = document.getElementById('contactName').value;
     let email = document.getElementById('contactEmail').value;
     let subject = document.getElementById('contactSubject').value;
