@@ -91,7 +91,7 @@ function draw () {
 function repopulate () {
     vertices = [];
     connections = [];
-    numVertices = floor(width * height / 17500);
+    numVertices = floor(width * height / 18000);
     for (let i = 0; i < numVertices; i ++) vertices.push(new Vertex());
     for (let v1 = 0; v1 < vertices.length; v1 ++)
         for (let v2 = v1 + 1; v2 < vertices.length; v2 ++)

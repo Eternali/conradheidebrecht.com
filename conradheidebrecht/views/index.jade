@@ -4,7 +4,30 @@ block content
     script(src='javascripts/vertex.js')
     script(src='javascripts/background.js')
 
+    // global background
     div#canvasBackground
-    label.switch#performance
-        input(type='checkbox', checked='true', onchange='pause()')
-        span.slider
+    header#home
+        // top navbar
+        nav#nav-wrap
+            ul.nav#nav
+                li.current
+                    a.smoothscroll(href='#home') Home
+                li
+                    a.smoothscroll(href='#about') About
+                li
+                    a.smoothscroll(href='#resume') Resume
+                li
+                    a.smoothscroll(href='#skills') Skills
+                li
+                    a.smoothscroll(href='#works') Works
+                li
+                    a.smoothscroll(href='#contact') Contact
+
+            // toggle the dynamic background (it is pretty gpu intensive)
+            // TODO: when toggle is hovered provide them with info about how to change settings
+            label.switch#performance
+                input(type='checkbox', checked='true', onchange='pause()')
+                span.slider
+        // main info banner
+        div.banner-head
+
