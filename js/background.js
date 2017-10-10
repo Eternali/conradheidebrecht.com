@@ -33,7 +33,7 @@
 // requestAnimationFrame(render);
 
 let canvas, width, height, fps;
-let vertexRad, lineWidth, connDist, dist;
+let numVertices, vertexRad, lineWidth, connDist, dist;
 let maxRestSpeed, friction;
 
 let vertices = [];
@@ -50,10 +50,7 @@ function setup () {
     maxRestSpeed = 2;
     friction = 0.9;
 
-    for (let i = 0; i < 80; i ++) vertices.push(new Vertex());
-    for (let v1 = 0; v1 < vertices.length; v1 ++)
-        for (let v2 = v1 + 1; v2 < vertices.length; v2 ++)
-            connections.push([vertices[v1], vertices[v2]]);
+    repopulate();
 
     canvas = createCanvas(width, height);
     canvas.parent('canvasBackground');
@@ -90,8 +87,27 @@ function draw () {
 
 }
 
+
+function repopulate () {
+    vertices = [];
+    connections = [];
+    numVertices = floor(width * height / 17500);
+    for (let i = 0; i < numVertices; i ++) vertices.push(new Vertex());
+    for (let v1 = 0; v1 < vertices.length; v1 ++)
+        for (let v2 = v1 + 1; v2 < vertices.length; v2 ++)
+            connections.push([vertices[v1], vertices[v2]]);
+}
+
 function windowResized () {
     width = window.innerWidth;
-    height = window.innerHeight;
+    height = window.innerHeight;floor(width * height / 15000);
+    repopulate();
+
     canvas.size(width, height);
+}
+
+// for enabling and disabling the dynamic background
+function pause () {
+    let isContinue = $('#performance').find('input').is(':checked');
+    (isContinue) ? loop() : noLoop();
 }
