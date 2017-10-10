@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    script(src='javascripts/vertex.js')
+    script(src='javascripts/background.js')
+
+    div#canvasBackground
+    label.switch#performance
+        input(type='checkbox', checked='true', onchange='pause()')
+        span.slider

@@ -1,7 +1,22 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    head
+        meta(charset='utf-8')
+        meta(name='description', content='Resume')
+        meta(name='author', content='Conrad Heidebrecht')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+        title= title
+
+        link(rel='stylesheet', href='/stylesheets/default.css')
+        link(rel='stylesheet', href='/stylesheets/layout.css')
+        link(rel='shortcut icon', href='favicon.ico')
+
+        script(src='javascripts/jquery-1.10.2.min.js')
+        script(src='javascripts/p5.min.js')
+        script(src='javascripts/p5.dom.min.js')
+        script(src='javascripts/p5.sound.min.js')
+        script(src='javascripts/sendemail.js')
+
+    body
+        block content
