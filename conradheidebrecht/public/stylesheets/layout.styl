@@ -2,6 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
 
 
+// Root colors //
+base = #00796B
+hover-base = #70e9dB
+hot-complement = #860707
+
 // main body //
 
 body
@@ -56,10 +61,10 @@ body
     transition .4s
 
 input:checked + .slider
-    background-color #00796B
+    background-color base
 
 input:focus + .slider
-    box-shadow 0 0 1px #00796B
+    box-shadow 0 0 1px base
 
 input:checked + .slider:before
     -webkit-transform translateX(26px)
@@ -118,10 +123,10 @@ ul#nav li a:active
     background-color transparent !important
 
 ul#nav li a:hover
-    color: #70e9dB
+    color: hover-base
 
 ul#nav li.current a
-    color: #00796B
+    color: base
 
 
 // HOME //
@@ -141,21 +146,20 @@ header .banner-head
     text-align center
 
 header .banner-head h1
-    font: 80px/1.1em 'Raleway', sans-serif
+    font-family 'Raleway', sans-serif
+    font-weight 400
+    font-size 3.4em
+    letter-spacing .25em
     color: #fff
     margin auto
     height 100%
 
-.title-name
-    text-transform: uppercase
-    font-weight 400
-
 // name animations
 .letterDrop
     position relative
-    top .60em
+    top -4.25em
     display inline-block
-    letter-spacing .3em
+    text-transform: uppercase
     opacity .8
     transform rotateX(-90deg)
     animation letterDrop 1.2s ease 1 normal forwards
@@ -165,18 +169,19 @@ header .banner-head h1
         opacity .5
     20%
         opacity .8
-        top 3.75em
+        top -1.25em
         transform rotateX(-360deg)
     100%
         opacity 1
-        top 4.50em
+        top .05em
         transform rotateX(360deg)
 
-span:nth-child(2n)
-    color #34495e
+span:nth-child(n)
+    color base
+    font-weight 400
 
 span:nth-child(-n+6)
-    color #c0392b
+    color hot-complement
     font-weight 800
     letter-spacing .25em
 
@@ -185,7 +190,7 @@ span:nth-child(-n+6)
     margin 24px 0
     padding 0
     font-size 30px
-    text-shadow 0px 1px 2px rgba(0, 0, 0, .8)
+    text-shadow 0 1px 2px rgba(0, 0, 0, .8)
 
 .social li
     display inline-block
@@ -196,4 +201,4 @@ span:nth-child(-n+6)
     color #fff
 
 .social li a:hover
-    color #70e9dB
+    color hover-base
