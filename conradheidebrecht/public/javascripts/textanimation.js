@@ -1,3 +1,7 @@
+jQuery.fn.letterDrop = function () {
+
+};
+
 $(document).ready(function () {
 
     // change the color of the navbar elements
