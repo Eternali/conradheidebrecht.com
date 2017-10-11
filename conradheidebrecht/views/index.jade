@@ -33,8 +33,9 @@ block content
             h1.responsive-headline.title-name Conrad Heidebrecht
             // note for multiline raw text, either put a `.` after the tag, or start each new line with a `|`.
             h3 I'm a <a href='https://uwaterloo.ca/systems-design-engineering'>Systems Design Engineering</a> student
-               | at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for web & Android development and
-               | machine learning. Let's start scrolling and learn more!
+                | at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for <span>web</span> &
+                | <span>Android</span> development and <span>machine learning</span>. Let's
+                | start scrolling and <a class='smoothscroll local' href='#about'>learn more</a>!
             hr
             ul.social
                 li
@@ -48,3 +49,6 @@ block content
         p.scrolldown
             a.smoothscroll(href='#about')
                 i.icon-down-circle
+
+    // ABOUT section //
+    section#about null

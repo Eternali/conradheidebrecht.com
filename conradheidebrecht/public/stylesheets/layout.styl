@@ -5,6 +5,7 @@
 // Root colors //
 base = #00796B
 hover-base = #70e9dB
+hover-remote = #757575
 hot-complement = #860707
 sub-title = #A8A8A8
 
@@ -177,11 +178,11 @@ header .banner-head h1
         top -.75em
         transform rotateX(360deg)
 
-span:nth-child(n)
+header .banner-head h1 span:nth-child(n)
     color base
     font-weight 400
 
-span:nth-child(-n+6)
+header .banner-head h1 span:nth-child(-n+6)
     color hot-complement
     font-weight 800
     letter-spacing .25em
@@ -196,16 +197,19 @@ header .banner-head h3
     text-shadow 0 1px 2px rgba(0, 0, 0, .5)
 
 header .banner-head h3 a
+header .banner-head h3 span
     color #fff
 
 header .banner-head h3 a:hover
+    color hover-remote
+header .banner-head h3 .local:hover
     color hover-base
 
 // header divider
 header .banner-head hr
     width 50%
     margin 28px auto 28px auto
-    border-color rgba(150, 150, 150, .8)
+    border-color rgba(150, 150, 150, .6)
 
 // social media icons
 .social
