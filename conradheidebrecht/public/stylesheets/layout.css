@@ -1,6 +1,4 @@
-body {
-  background: #0f0f0f;
-}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800");
 #canvasBackground {
   width: 100vw;
   height: 100vh;
@@ -47,13 +45,90 @@ body {
   transition: 0.4s;
 }
 input:checked + .slider {
-  background-color: #11abb0;
+  background-color: #00796b;
 }
 input:focus + .slider {
-  box-shadow: 0 0 1px #11abb0;
+  box-shadow: 0 0 1px #00796b;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+#nav-wrap {
+  font: 14px 'opensans-bold', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.opaque {
+  background-color: #333;
+}
+ul#nav {
+  min-height: 48px;
+  width: auto;
+  text-align: center;
+}
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+ul#nav li a {
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+ul#nav li a:hover {
+  color: #70e9db;
+}
+ul#nav li.current a {
+  color: #00796b;
+}
+header:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+header .banner-head h1 {
+  font: 80px/1.1em 'Raleway', sans-serif;
+  color: #fff;
+  margin: 0 auto 18px auto;
+}
+.title-name {
+  text-transform: uppercase;
 }

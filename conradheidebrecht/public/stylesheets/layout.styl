@@ -1,3 +1,6 @@
+// Global imports //
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
 // main background and main custom toggles
 
 #canvasBackground
@@ -46,10 +49,10 @@
     transition .4s
 
 input:checked + .slider
-    background-color #11ABB0
+    background-color #00796B
 
 input:focus + .slider
-    box-shadow 0 0 1px #11ABB0
+    box-shadow 0 0 1px #00796B
 
 input:checked + .slider:before
     -webkit-transform translateX(26px)
@@ -79,29 +82,61 @@ input:checked + .slider:before
 .opaque
     background-color #333
 
-#nav
+ul#nav
     min-height 48px
     width auto
     text-align center
 
-#nav li
+ul#nav li
     position relative
     list-style none
     height 48px
     display inline-block
 
-.nav
+ul#nav li a
+    display inline-block
+    padding 8px 13px
+    line-height 32px
+    text-decoration none
+    text-align left
+    color: #fff
 
-li a:active
+    -webkit-transition color .2s ease-in-out
+    -moz-transition color .2s ease-in-out
+    -o-transition color .2s ease-in-out
+    -ms-transition color .2s ease-in-out
+    transition color .2s ease-in-out
+
+ul#nav li a:active
     background-color transparent !important
 
-li.current a
-    color: #11abb0
+ul#nav li a:hover
+    color: #70e9dB
+
+ul#nav li.current a
+    color: #00796B
 
 
 // HOME //
 
-#home
+header:before
+    content ''
+    display inline-block
+    vertical-align middle
+    height 100%
 
-.banner-head
+header .banner
+    display inline-block
+    vertical-align middle
+    margin 0 auto
+    width 100%
+    padding-bottom 30px
+    text-align center
 
+header .banner-head h1
+    font: 80px/1.1em 'Raleway', sans-serif
+    color: #fff
+    margin 0 auto 18px auto
+
+.title-name
+    text-transform: uppercase
