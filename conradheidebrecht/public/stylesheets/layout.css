@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800");
+body {
+  display: table;
+}
 #canvasBackground {
   width: 100vw;
   height: 100vh;
@@ -115,8 +118,12 @@ header:before {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
+  border: 2px solid #fff;
 }
-header .banner {
+header {
+  border: 2px solid #fff;
+}
+header .banner-head {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;

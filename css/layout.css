@@ -112,6 +112,7 @@ header:before {
    display: inline-block;
    vertical-align: middle;
    height: 100%;
+   border: 2px solid white;
 }
 header .banner {
    display: inline-block;
@@ -120,6 +121,7 @@ header .banner {
    width: 85%;
    padding-bottom: 30px;
    text-align: center;
+   border: 2px solid white;
 }
 
 header .banner-text { width: 100%; }
