@@ -30,7 +30,12 @@ block content
                 span.slider
         // main info banner
         div.banner-head
-            h1.responsive-headline I'm <span class='title-name'>Conrad Heidebrecht</span>.
+            h1.responsive-headline.title-name Conrad Heidebrecht
+            // note for multiline raw text, either put a `.` after the tag, or start each new line with a `|`.
+            h3 I'm a <a href='https://uwaterloo.ca/systems-design-engineering'>Systems Design Engineering</a> student
+               | at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for web & Android development and
+               | machine learning. Let's start scrolling and learn more!
+            hr
             ul.social
                 li
                     a(href='https://github.com/eternali')
@@ -38,3 +43,8 @@ block content
                 li
                     a(href='https://linkedin.com/in/conrad-heidebrecht-651395149')
                         i.fa.fa-linkedin
+
+        // scrolldown button
+        p.scrolldown
+            a.smoothscroll(href='#about')
+                i.icon-down-circle
