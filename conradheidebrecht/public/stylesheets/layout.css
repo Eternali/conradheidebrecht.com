@@ -251,6 +251,23 @@ header .banner-head hr {
   background: #fff;
   color: #00796b;
 }
+#resume {
+  background: #fff;
+  padding: 2em 0;
+}
+#resume .col-2 {
+  margin-left: -2em;
+}
+#resume .col-8 {
+  margin-right: -10em;
+}
+#resume resume-title {
+  padding: 0;
+  font-family: 'opensans-bold', sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #a8a8a8;
+}
 @-moz-keyframes letterDrop {
   10% {
     opacity: 0.5;

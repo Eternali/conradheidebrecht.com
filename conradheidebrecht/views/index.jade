@@ -88,20 +88,31 @@ block content
                 div.col-4
 
     // RESUME sections //
-    section#resume.pt-32.pb-32.mt-32.mb-32
+    section#resume
         // FORMAL EDUCATION
         div.container
             div.row
                 div.col-1
                 div.col-2.resume-title(align='left')
                     h1 Formal Education
-                div.col-8.formal-body(align='center')
+                div.col-8.formal-body(align='right')
                     ul.formal-education
                         li
                             h2 University of Waterloo
                             p.location Waterloo, ON
                             p.degree Candidate for Bachelor of Applied Science&emsp;&bull;&emsp;
                             p.date Sept. 2017 - present
+                div.col-1
+            div.row
+                div.col-1
+                div.col-2.resume-title(align='left')
+                    h1 Supplementary Education
+                div.col-8.supplementary-body(align='right')
+                    ul.supplementary-education
+                        li
+                            h2 Neural Networks for Machine Learning
+                            p.date Jun. 2017 - present
+                            p.description University of Toronto via Coursera.org
                 div.col-1
 
 
