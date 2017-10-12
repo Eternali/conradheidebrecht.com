@@ -241,6 +241,16 @@ header .banner-head hr {
 #about a:hover {
   color: #757575;
 }
+#about .button {
+  background: #00796b;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+#about .button:hover {
+  background: #fff;
+  color: #00796b;
+}
 @-moz-keyframes letterDrop {
   10% {
     opacity: 0.5;
