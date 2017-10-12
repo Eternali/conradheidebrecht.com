@@ -277,18 +277,62 @@ header .banner-head hr {
 #resume .resume-title h1 span {
   border-bottom: 3px solid #00796b;
 }
-#resume .formal-education div {
-  display: inline;
-}
-#resume .formal-education h2 {
+#resume h2 {
   text-align: left;
   font-size: 1.8em;
 }
+#resume .date {
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+#resume .lititle {
+  font-weight: 800;
+}
+#resume .formal-education li {
+  margin: 2em auto;
+}
 #resume .formal-education .location {
-  text-align: right;
-  margin-top: -2em;
+  float: right;
+  margin-top: -1.5em;
   font-size: 1.4em;
   color: #00796b;
+}
+#resume .formal-education .degree {
+  float: left;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-style: italic;
+}
+#resume .supplementary-education li {
+  margin: 2em auto;
+}
+#resume .supplementary-education .description {
+  float: left;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-style: italic;
+}
+#resume .work li {
+  margin: 2em auto;
+}
+#resume .work h2 {
+  margin-bottom: 0.5em;
+}
+#resume .work .title {
+  float: left;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  font-style: italic;
+}
+#resume .work .description {
+  text-align: left;
+  font-size: 1.1em;
+}
+#resume .work .description ul {
+  margin: 1.6em auto 1em 1em;
+}
+#resume .work .description li {
+  margin: 0.6em auto;
 }
 @-moz-keyframes letterDrop {
   10% {

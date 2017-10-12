@@ -7,8 +7,8 @@ base = #00796B
 hover-base = #70E9dB
 hover-remote = #757575
 hot-complement = #860707
-sub-title = #A8A8A8
-sub-section = #4A4A4A
+sub-title-light = #A8A8A8
+sub-title-dark = #4A4A4A
 
 bg-main = #2B2B2B
 bg-light = #fff
@@ -199,7 +199,7 @@ header .banner-head h1 span:nth-child(-n+6)
 header .banner-head h3
     font-family 'librebaskerville-regular', serif
     font-size 1.6em
-    color sub-title
+    color sub-title-light
     width 60%
     margin auto
     text-shadow 0 1px 2px rgba(0, 0, 0, .5)
@@ -278,7 +278,7 @@ header .banner-head hr
 #about h2
     font-family 'opensans-bold', sans-serif
     font-size 1.8em
-    color sub-title
+    color sub-title-light
 
 #about a
     color #A8A8A8
@@ -320,23 +320,69 @@ header .banner-head hr
     font-size 1.4em
     text-transform uppercase
     letter-spacing 1px
-    color sub-section
+    color sub-title-dark
 
 #resume .resume-title h1 span
     border-bottom 3px solid base
 
-// Formal Education
-#resume .formal-education div
-    display inline
-    
-#resume .formal-education h2
+#resume h2
     text-align left
     font-size 1.8em
 
+#resume .date
+    font-size 1.2em
+    font-family sans-serif
+
+#resume .lititle
+    font-weight 800
+
+// Formal Education
+#resume .formal-education li
+    margin 2em auto
+
 #resume .formal-education .location
-    text-align right
-    margin-top -2em
+    float right
+    margin-top -1.5em
     font-size 1.4em
     color base
+
+#resume .formal-education .degree
+    float left
+    font-size 1.2em
+    font-family sans-serif
+    font-style italic
+
+// Supplementary Education
+#resume .supplementary-education li
+    margin 2em auto
+
+#resume .supplementary-education .description
+    float left
+    font-size 1.2em
+    font-family sans-serif
+    font-style italic
+
+// Work
+#resume .work li
+    margin 2em auto
+
+#resume .work h2
+    margin-bottom .5em
+
+#resume .work .title
+    float left
+    font-size 1.4em
+    font-family sans-serif
+    font-style italic
+
+#resume .work .description
+    text-align left
+    font-size 1.1em
+
+#resume .work .description ul
+    margin 1.6em auto 1em 1em
+
+#resume .work .description li
+    margin .6em auto
 
 

@@ -82,10 +82,9 @@ $(document).ready(function () {
 
     // add a waypoint to reanimate name whenever the user comes back to home
     $('#home').waypoint({
-        handler: function () {
-            $('.title-name').letterDrop();
-        },
-        offset: '50%'
+        handler: function (event, direction) {
+            if (direction === 'up') $('.title-name').letterDrop();
+        }
     });
 
 });
