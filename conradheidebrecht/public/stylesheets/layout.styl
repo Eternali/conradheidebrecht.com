@@ -1,18 +1,24 @@
 // Global imports //
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800)
 
 
 // Root colors //
 base = #00796B
-hover-base = #70e9dB
+hover-base = #70E9dB
 hover-remote = #757575
 hot-complement = #860707
 sub-title = #A8A8A8
 
-// main body //
+bg-main = #2B2B2B
+
+//  main body  //
 
 body
-    display table
+    margin 0
+    padding 0
+
+a:hover
+    text-decoration none
 
 
 // main background and main custom toggles
@@ -32,8 +38,8 @@ body
     right 0
     margin-top 6px
     margin-right 6px
-    width: 60px
-    height: 34px
+    width 60px
+    height 34px
 
 .switch input
     display none
@@ -74,7 +80,7 @@ input:checked + .slider:before
     transform translateX(26px)
 
 
-// NAVBAR //
+//  NAVBAR  //
 
 #nav-wrap
     font 14px 'opensans-bold', sans-serif
@@ -113,7 +119,7 @@ ul#nav-custom li a
     line-height 32px
     text-decoration none
     text-align left
-    color: #fff
+    color #fff
 
     -webkit-transition color .2s ease-in-out
     -moz-transition color .2s ease-in-out
@@ -125,17 +131,17 @@ ul#nav-custom li a:active
     background-color transparent !important
 
 ul#nav-custom li a:hover
-    color: hover-base
+    color hover-base
 
 ul#nav-custom li.current a
-    color: base
+    color base
 
 
-// HOME //
+//  HOME  //
 
 header
-    min-width: 100vw;
-    min-height: 100vh;
+    //min-width 100vw  // screws up the width for some reason
+    min-height 100vh
     display flex
     align-items center
     margin auto
@@ -152,7 +158,7 @@ header .banner-head h1
     font-weight 400
     font-size 4.4em
     letter-spacing .3em
-    color: #fff
+    color #fff
     margin 32px auto
     height 100%
 
@@ -161,7 +167,7 @@ header .banner-head h1
     position relative
     top -4.75em
     display inline-block
-    text-transform: uppercase
+    text-transform uppercase
     opacity .8
     transform rotateX(-90deg)
     animation letterDrop 1.2s ease 1 normal forwards
@@ -250,4 +256,31 @@ header .banner-head hr
 
 .scrolldown a:hover
     color base
+
+
+//  ABOUT  //
+
+#about
+    background bg-main
+    padding 0
+    margin 0
+
+#about .profile-pic
+    position relative
+    min-width 200px
+    min-height 200px
+    border-radius 100%
+    background base
+    margin 52px auto 32px auto
+
+#about h2
+    font-family 'opensans-bold', sans-serif
+    font-size 1.8em
+    color sub-title
+
+#about a
+    color #A8A8A8
+
+#about a:hover
+    color hover-remote
 

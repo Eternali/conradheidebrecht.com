@@ -57,8 +57,8 @@ $(document).ready(function () {
         offset: '35%'
     });
 
-    $('#nav').on('click', 'li', function () {
-        $('#nav').find('li').removeClass('current');
+    $('#nav-custom').on('click', 'li', function () {
+        $('#nav-custom').find('li').removeClass('current');
         $(this).addClass('current');
     });
 
@@ -79,5 +79,13 @@ $(document).ready(function () {
 
     // animate name drop
     $('.title-name').letterDrop();
+
+    // add a waypoint to reanimate name whenever the user comes back to home
+    $('#home').waypoint({
+        handler: function () {
+            $('.title-name').letterDrop();
+        },
+        offset: '50%'
+    });
 
 });
