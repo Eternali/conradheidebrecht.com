@@ -59,8 +59,7 @@ block content
                     img.profile-pic(src='images/profilepic.png', alt='')
                 div.col-4
             div.row
-                div.col-1
-                div.col-6.pl-0.pr-0.ml-0.mr-0
+                div.col-8(align='left')
                     h2 About Me
                     p I am a Systems Design Engineering student at the University of Waterloo in my first year.
                         | My main interests are for web and Android development, computer hardware, cyber security,
@@ -71,7 +70,7 @@ block content
                         | recently fascinated with machine learning and artificial intelligence. I have taken several
                         | online courses on the subject and have researched and designed my own projects that
                         | demonstrate the power of machine learning.
-                div.col-4.ml-4
+                div.col-4(align='right')
                     h2 Contact Details
                     ul
                         li Conrad Heidebrecht
@@ -79,7 +78,6 @@ block content
                         li Kitchener, ON N2G 2E9, Canada
                         li (519) 501-4327
                         li <a href='mailto:crbheide@edu.uwaterloo.ca'>crbheide@edu.uwaterloo.ca</a>
-                div.col-1
             div.row
                 div.col-4
                 div.col-4(align='center')
@@ -92,28 +90,25 @@ block content
         // FORMAL EDUCATION
         div.container-fluid
             div.row
-                div.col-1
-                div.col-2.resume-title(align='left')
+                div.col-3.resume-title(align='left')
                     h1 <span>Formal Education</span>
-                div.col-8.formal-body(align='right')
+                div.col-9.formal-body(align='right')
                     ul.formal-education
                         li
-                            h2 University of Waterloo
-                            p.location Waterloo, ON
+                            div
+                                h2 University of Waterloo
+                                span.location Waterloo, ON
                             p.degree Candidate for Bachelor of Applied Science&emsp;&bull;&emsp;
                             p.date Sept. 2017 - present
-                div.col-1
             div.row
-                div.col-1
-                div.col-2.resume-title(align='left')
+                div.col-3.resume-title(align='left')
                     h1 <span>Supplementary Education</span>
-                div.col-8.supplementary-body(align='right')
+                div.col-9.supplementary-body(align='right')
                     ul.supplementary-education
                         li
                             h2 Neural Networks for Machine Learning
                             p.date Jun. 2017 - present
                             p.description University of Toronto via Coursera.org
-                div.col-1
 
 
 
