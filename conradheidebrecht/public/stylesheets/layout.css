@@ -255,18 +255,29 @@ header .banner-head hr {
   background: #fff;
   padding: 2em 0;
 }
+#resume .container {
+  width: 100vw;
+  border: 2px solid #860707;
+}
+#resume .row {
+  border: 2px solid #860707;
+}
 #resume .col-2 {
   margin-left: -2em;
 }
 #resume .col-8 {
-  margin-right: -10em;
+  margin-right: -2em;
 }
-#resume resume-title {
+#resume .resume-title h1 {
   padding: 0;
   font-family: 'opensans-bold', sans-serif;
   font-size: 1.4em;
-  font-weight: 600;
-  color: #a8a8a8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+}
+#resume .resume-title h1 span {
+  border-bottom: 3px solid #00796b;
 }
 @-moz-keyframes letterDrop {
   10% {
