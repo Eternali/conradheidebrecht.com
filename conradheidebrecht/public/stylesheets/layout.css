@@ -334,21 +334,15 @@ header .banner-head hr {
 #resume .work .description li {
   margin: 0.6em auto;
 }
+#skills {
+  background: #2b2b2b;
+}
 .range-field {
   display: inline-block;
   width: 100%;
   height: 34px;
   margin: 0;
   background: transparent !important;
-}
-.toggle3-container input {
-  -webkit-appearance: none;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  outline: none;
-  border: none;
 }
 .toggle3-msg {
   position: relative;
@@ -357,80 +351,99 @@ header .banner-head hr {
   transition: opacity 0.4s ease-in-out;
   top: -8px;
 }
+.toggle3-container input {
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  outline: none;
+  border: none;
+  background-color: #2b2b2b;
+}
 .toggle3-container input::-webkit-slider-runnable-track {
-  width: 100%;
+  width: 400px;
   height: 34px;
-  animate: 0.4s;
-  background: #860707;
+  background: #888;
   border: none;
   border-radius: 34px;
 }
 .toggle3-container input::-webkit-slider-thumb {
   -webkit-appearance: none;
-  border: none;
   height: 26px;
   width: 26px;
+  border: none;
   border-radius: 50%;
   background: #fff;
+  margin-top: 4px;
+}
+.toggle3-container input:focus {
+  outline: none;
+}
+.toggle3-container input:focus::-webkit-slider-runnable-track {
+  background: #666;
 }
 .toggle3-container input::-moz-range-track {
-  width: 100%;
+  width: 400px;
   height: 34px;
-  animate: 0.4s;
-  background: #3071a9;
-  border: none;
-  border-radius: 34px;
-}
-.toggle3-container input::-moz-range-thumb {
-  border: none;
-  height: 26px;
-  width: 26px;
-  border-radius: 50%;
-  background: #fff;
-}
-.toggle3-container input::-ms-track {
-  width: 100%;
-  height: 34px;
-  animate: 0.4s;
-  background: transparent;
-  border-color: transparent;
-  border: none;
-  color: transparent;
-}
-.toggle3-container input::-ms-fill-lower {
   border: none;
   background: #888;
   border-radius: 34px;
 }
-.toggle3-container input::-ms-fill-upper {
+.toggle3-container input::-moz-range-thumb {
+  height: 26px;
+  width: 26px;
   border: none;
+  background: #fff;
+  border-radius: 50%;
+}
+.toggle3-container input:-moz-focusring {
+  outline: transparent !important;
+  outline-offset: -1px;
+}
+.toggle3-container input::-ms-track {
+  width: 400px;
+  height: 34px;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+.toggle3-container input::-ms-fill-lower {
+  background: #666;
+  border-radius: 34px;
+}
+.toggle3-container input::-ms-fill-upper {
   background: #888;
   border-radius: 34px;
 }
 .toggle3-container input::-ms-thumb {
-  border: none;
   height: 26px;
   width: 26px;
-  border-radius: 13px;
+  border: none;
   background: #fff;
+  border-radius: 50%;
+}
+.toggle3-container input:focus::-ms-fill-lower {
+  background: #666;
+}
+.toggle3-container input:focus::-ms-fill-upper {
+  background: #888;
 }
 .rangeLeft::-webkit-slider-runnable-track {
   background: #00796b !important;
-  border-radius: 30px !important;
 }
 .rangeLeft::-webkit-slider-thumb {
   background: #fff !important;
 }
 .rangeNeutral::-webkit-slider-runnable-track {
   background: #888 !important;
-  border-radius: 30px !important;
 }
 .rangeNeutral::-webkit-slider-thumb {
   background: #fff !important;
 }
 .rangeRight::-webkit-slider-runnable-track {
   background: #860707 !important;
-  border-radius: 30px !important;
 }
 .rangeRight::-webkit-slider-thumb {
   background: #fff !important;
