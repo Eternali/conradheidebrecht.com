@@ -52,19 +52,19 @@ function toggleSkills(range) {
         case '0':
             range.className = 'rangeLeft';
             $left.css('opacity', '1');
-            $middle.css('opacity', '0');
-            $right.css('opacity', '0');
+            $middle.css('opacity', '.4');
+            $right.css('opacity', '.4');
             break;
         case '1':
             range.className = 'rangeNeutral';
-            $left.css('opacity', '0');
+            $left.css('opacity', '.4');
             $middle.css('opacity', '1');
-            $right.css('opacity', '0');
+            $right.css('opacity', '.4');
             break;
         case '2':
             range.className = 'rangeRight';
-            $left.css('opacity', '0');
-            $middle.css('opacity', '0');
+            $left.css('opacity', '.4');
+            $middle.css('opacity', '.4');
             $right.css('opacity', '1');
             break;
     }

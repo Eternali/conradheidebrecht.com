@@ -166,8 +166,8 @@ block content
     // SKILLS section //
     section#skills
         div.container-fluid
-            div.row
-                div.col-12(align='center') <h1>Skills</h1>
+            div.row.pt-5.pb-5
+                div.col-12.mt-3(align='center') <h1>Skills</h1>
             // special three-way toggler
             div.row
                 div.col-3
@@ -177,12 +177,17 @@ block content
                             input(type='range', name='points', onchange='toggleSkills(this);', min='0', max='2', value='1')
                 div.col-3
             div.row
-                div#langmsg.col-4(align='right') Languages
-                div#bothmsg.col-4(align='center') Both
-                div#techmsg.col-4(align='left') Technologies
+                div#langmsg.col-4.toggle3-msg(align='right') Languages
+                div#bothmsg.col-4.toggle3-msg(align='center') Both
+                div#techmsg.col-4.toggle3-msg(align='left') Technologies
             // start the icons
             div.row
-                div
+                div.col-2.mt-3.mb-3
+                div.col-2.mt-3.mb-3
+                div.col-2.mt-3.mb-3
+                div.col-2.mt-3.mb-3
+                div.col-2.mt-3.mb-3
+                div.col-2.mt-3.mb-3
 
 
 

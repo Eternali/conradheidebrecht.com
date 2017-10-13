@@ -392,6 +392,12 @@ header .banner-head hr
 #skills
     background bg-main
 
+#skills h1
+    font-family 'opensans-bold', sans-serif
+    text-transform uppercase
+    font-size 2.1em
+    color sub-title-light
+
 // three way toggler
 .range-field
     display inline-block
@@ -404,8 +410,8 @@ header .banner-head hr
     position relative
     display inline-block
     opacity .4
-    transition opacity .4s ease-in-out
     top -8px
+    transition all 1s ease-in
 
 .toggle3-container input
     -webkit-appearance none
@@ -420,9 +426,11 @@ header .banner-head hr
 .toggle3-container input::-webkit-slider-runnable-track
     width 400px
     height 34px
-    background #888
+    padding 4px
     border none
+    background #888
     border-radius 34px
+    -webkit-transition all 1s ease-in
 
 .toggle3-container input::-webkit-slider-thumb
     -webkit-appearance none
@@ -431,7 +439,6 @@ header .banner-head hr
     border none
     border-radius 50%
     background #fff
-    margin-top 4px
 
 .toggle3-container input:focus
     outline none
@@ -445,6 +452,7 @@ header .banner-head hr
     border none
     background #888
     border-radius 34px
+    -moz-transition all 1s ease-in
 
 .toggle3-container input::-moz-range-thumb
     height 26px
@@ -464,6 +472,7 @@ header .banner-head hr
     border-color transparent
     border-width 6px 0
     color transparent
+    -o-transition all 1s ease-in
 
 .toggle3-container input::-ms-fill-lower
     background #666
