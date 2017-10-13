@@ -40,6 +40,37 @@ jQuery.fn.letterDrop = function () {
     drop.main();
 };
 
+
+// skill toggler function
+function toggleSkills(range) {
+    let val = range.value;
+    let $left = $('#langmsg');
+    let $middle = $('#bothmsg');
+    let $right = $('#techmsg');
+    // change text (toggleClass won't work because there are three options).
+    switch (val) {
+        case '0':
+            range.className = 'rangeLeft';
+            $left.css('opacity', '1');
+            $middle.css('opacity', '0');
+            $right.css('opacity', '0');
+            break;
+        case '1':
+            range.className = 'rangeNeutral';
+            $left.css('opacity', '0');
+            $middle.css('opacity', '1');
+            $right.css('opacity', '0');
+            break;
+        case '2':
+            range.className = 'rangeRight';
+            $left.css('opacity', '0');
+            $middle.css('opacity', '0');
+            $right.css('opacity', '1');
+            break;
+    }
+}
+
+
 $(document).ready(function () {
 
     // functionality and behaviour of navbar //
@@ -86,5 +117,6 @@ $(document).ready(function () {
             if (direction === 'up') $('.title-name').letterDrop();
         }
     });
+
 
 });

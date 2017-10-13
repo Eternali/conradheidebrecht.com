@@ -167,6 +167,20 @@ block content
     section#skills
         div.container-fluid
             div.row
+                div.col-12(align='center') <h1>Skills</h1>
+            div.row
+                div.col-4
+                div.col-4(align='center')
+                    div.toggle3-container
+                        div.range-field
+                            input(type='range', name='points', onchange='toggleSkills(this);', min='0', max='2', value='1')
+                            //span.toggle3
+                div.col-4
+            div.row
+                div#langmsg.col-4(align='right') Languages
+                div#bothmsg.col-4(align='center') Both
+                div#techmsg.col-4(align='left') Technologies
+
 
 
 
