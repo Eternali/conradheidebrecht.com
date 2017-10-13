@@ -47,6 +47,8 @@ function toggleSkills(range) {
     let $left = $('#langmsg');
     let $middle = $('#bothmsg');
     let $right = $('#techmsg');
+    let $langpic = $('.langpic');
+    let $techpic = $('.techpic');
     // change text (toggleClass won't work because there are three options).
     switch (val) {
         case '0':
@@ -54,18 +56,24 @@ function toggleSkills(range) {
             $left.css('opacity', '1');
             $middle.css('opacity', '.4');
             $right.css('opacity', '.4');
+            $langpic.addClass('active').removeClass('both');
+            $techpic.removeClass('active').removeClass('both');
             break;
         case '1':
             range.className = 'rangeNeutral';
             $left.css('opacity', '.4');
             $middle.css('opacity', '1');
             $right.css('opacity', '.4');
+            $langpic.removeClass('active').addClass('both');
+            $techpic.removeClass('active').addClass('both');
             break;
         case '2':
             range.className = 'rangeRight';
             $left.css('opacity', '.4');
             $middle.css('opacity', '.4');
             $right.css('opacity', '1');
+            $langpic.removeClass('active').removeClass('both');
+            $techpic.addClass('active').removeClass('both');
             break;
     }
 }
