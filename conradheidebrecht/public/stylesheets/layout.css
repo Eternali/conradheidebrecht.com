@@ -465,12 +465,17 @@ header .banner-head hr {
   background: #fff !important;
 }
 #skills .col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   width: 100%;
   height: 100%;
   transition: all 0.4s ease-in-out;
 }
 #skills .col-2:hover span {
   opacity: 1;
+  text-shadow: 0 2px 2px #000;
 }
 #skills .col-2:hover img {
   -webkit-transform: scale(1.3);
@@ -481,7 +486,7 @@ header .banner-head hr {
 }
 #skills .col-2:hover {
   background: rgba(150,150,150,0.3);
-  border-radius: 10%;
+  border-radius: 50%;
 }
 #skills .langpic {
   width: 80%;
@@ -512,14 +517,18 @@ header .banner-head hr {
 }
 .skillName {
   position: absolute;
-  opacity: 0;
   left: 0;
-  top: 33%;
-  text-align: center;
+  top: 40%;
   width: 100%;
+  opacity: 0;
   font-weight: 600;
   font-size: 1.2em;
+  color: #cdcdcd;
+  text-shadow: 0 6px 10px #000;
   transition: all 0.4s ease-in-out;
+}
+#works {
+  background: #ababab;
 }
 @-moz-keyframes letterDrop {
   10% {
