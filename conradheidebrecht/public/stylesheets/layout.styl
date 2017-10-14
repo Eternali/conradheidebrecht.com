@@ -22,6 +22,10 @@ body
 a:hover
     text-decoration none
 
+.row.vertical-align
+    display flex
+    align-items center
+
 
 // main background and main custom toggles
 
@@ -398,6 +402,9 @@ header .banner-head hr
     font-size 2.1em
     color sub-title-light
 
+#skills .row.vertical-align
+    height 150px
+
 // three way toggler
 .range-field
     display inline-block
@@ -516,22 +523,22 @@ header .banner-head hr
 
 // images and icons
 #skills .langpic
-    max-width 70%
-    max-height 70%
-    opacity .5
+    width 80%
+    height auto
+    margin auto
     transition all .5s ease-in-out
 
 #skills .techpic
-    max-width 70%
-    max-height 70%
-    opacity .5
+    width 80%
+    height auto
+    margin auto
     transition all .5s ease-in-out
 
 .active
     min-width 100%
     opacity 1
 
-.both
-    min-width 80%
-    opacity 1
+.inactive
+    max-width 60%
+    opacity .6
 

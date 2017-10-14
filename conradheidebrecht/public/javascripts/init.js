@@ -56,24 +56,28 @@ function toggleSkills(range) {
             $left.css('opacity', '1');
             $middle.css('opacity', '.4');
             $right.css('opacity', '.4');
-            $langpic.addClass('active').removeClass('both');
-            $techpic.removeClass('active').removeClass('both');
+            $langpic.removeClass('inactive');
+            $techpic.removeClass('active');
+            $techpic.addClass('inactive');
+            $langpic.addClass('active');
             break;
         case '1':
             range.className = 'rangeNeutral';
             $left.css('opacity', '.4');
             $middle.css('opacity', '1');
             $right.css('opacity', '.4');
-            $langpic.removeClass('active').addClass('both');
-            $techpic.removeClass('active').addClass('both');
+            $langpic.removeClass('inactive active');
+            $techpic.removeClass('inactive active');
             break;
         case '2':
             range.className = 'rangeRight';
             $left.css('opacity', '.4');
             $middle.css('opacity', '.4');
             $right.css('opacity', '1');
-            $langpic.removeClass('active').removeClass('both');
-            $techpic.addClass('active').removeClass('both');
+            $techpic.removeClass('inactive');
+            $langpic.removeClass('active');
+            $langpic.addClass('inactive');
+            $techpic.addClass('active');
             break;
     }
 }

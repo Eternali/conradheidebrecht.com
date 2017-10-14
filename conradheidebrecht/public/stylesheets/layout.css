@@ -6,6 +6,10 @@ body {
 a:hover {
   text-decoration: none;
 }
+.row.vertical-align {
+  display: flex;
+  align-items: center;
+}
 #canvasBackground {
   width: 100vw;
   height: 100vh;
@@ -343,6 +347,9 @@ header .banner-head hr {
   font-size: 2.1em;
   color: #a8a8a8;
 }
+#skills .row.vertical-align {
+  height: 150px;
+}
 .range-field {
   display: inline-block;
   width: 100%;
@@ -458,24 +465,24 @@ header .banner-head hr {
   background: #fff !important;
 }
 #skills .langpic {
-  max-width: 70%;
-  max-height: 70%;
-  opacity: 0.5;
+  width: 80%;
+  height: auto;
+  margin: auto;
   transition: all 0.5s ease-in-out;
 }
 #skills .techpic {
-  max-width: 70%;
-  max-height: 70%;
-  opacity: 0.5;
+  width: 80%;
+  height: auto;
+  margin: auto;
   transition: all 0.5s ease-in-out;
 }
 .active {
   min-width: 100%;
   opacity: 1;
 }
-.both {
-  min-width: 80%;
-  opacity: 1;
+.inactive {
+  max-width: 60%;
+  opacity: 0.6;
 }
 @-moz-keyframes letterDrop {
   10% {
