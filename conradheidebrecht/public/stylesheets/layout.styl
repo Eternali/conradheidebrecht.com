@@ -12,6 +12,7 @@ sub-title-dark = #4A4A4A
 
 bg-main = #2B2B2B
 bg-light = #fff
+bg-img = #ababab
 
 //  main body  //
 
@@ -522,6 +523,22 @@ header .banner-head hr
     background white !important
 
 // images and icons
+#skills .col-2
+    width 100%
+    height 100%
+    transition all .4s ease-in-out
+    &:hover span
+        opacity 1
+    &:hover img
+        -webkit-transform scale(1.3)
+        -moz-transform scale(1.3)
+        -ms-transform scale(1.3)
+        -o-transform scale(1.3)
+        transform scale(1.3)
+    &:hover
+        background rgba(150, 150, 150, 0.3)
+        border-radius 10%
+
 #skills .langpic
     width 80%
     height auto
@@ -535,10 +552,29 @@ header .banner-head hr
     transition all .5s ease-in-out
 
 .active
-    min-width 100%
-    opacity 1
+    -webkit-transform scale(1.2)
+    -moz-transform scale(1.2)
+    -ms-transform scale(1.2)
+    -o-transform scale(1.2)
+    transform scale(1.2)
 
 .inactive
-    max-width 60%
+    -webkit-transform scale(0.8)
+    -moz-transform scale(0.8)
+    -ms-transform scale(0.8)
+    -o-transform scale(0.8)
+    transform scale(0.8)
     opacity .6
+
+.skillName
+    position absolute
+    opacity 0
+    left 0
+    top 33%
+    text-align center
+    width 100%
+    font-weight 600
+    font-size 1.2em
+    transition all .4s ease-in-out
+
 
