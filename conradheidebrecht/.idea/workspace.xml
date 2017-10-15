@@ -30,8 +30,8 @@
           <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="727">
-                  <caret line="290" column="71" lean-forward="true" selection-start-line="290" selection-start-column="71" selection-end-line="290" selection-end-column="71" />
+                <state relative-caret-position="375">
+                  <caret line="279" column="19" lean-forward="false" selection-start-line="279" selection-start-column="19" selection-end-line="279" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -271,12 +271,12 @@
       <workItem from="1507733553976" duration="33000" />
       <workItem from="1507733600800" duration="11847000" />
       <workItem from="1507751378584" duration="7587000" />
-      <workItem from="1507919606230" duration="18203000" />
+      <workItem from="1507919606230" duration="21957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95807000" />
+    <option name="totallyTimeSpent" value="99561000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
@@ -654,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="290" column="71" lean-forward="true" selection-start-line="290" selection-start-column="71" selection-end-line="290" selection-end-column="71" />
+        <state relative-caret-position="375">
+          <caret line="279" column="19" lean-forward="false" selection-start-line="279" selection-start-column="19" selection-end-line="279" selection-end-column="19" />
           <folding />
         </state>
       </provider>
