@@ -550,6 +550,9 @@ header .banner-head hr {
 .footer-social:hover {
   color: #fff;
 }
+#go-top {
+  transform: scale(2.8);
+}
 @-moz-keyframes letterDrop {
   10% {
     opacity: 0.5;
