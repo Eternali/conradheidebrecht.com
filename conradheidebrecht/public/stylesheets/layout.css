@@ -543,7 +543,7 @@ header .banner-head hr {
   background: #2b2b2b;
 }
 .footer-social {
-  margin: auto;
+  transform: scale(1.8);
 }
 @-moz-keyframes letterDrop {
   10% {
