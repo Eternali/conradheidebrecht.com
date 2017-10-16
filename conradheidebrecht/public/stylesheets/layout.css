@@ -539,6 +539,12 @@ header .banner-head hr {
 #works {
   background: #ababab;
 }
+#footer {
+  background: #2b2b2b;
+}
+.footer-social {
+  margin: auto;
+}
 @-moz-keyframes letterDrop {
   10% {
     opacity: 0.5;
