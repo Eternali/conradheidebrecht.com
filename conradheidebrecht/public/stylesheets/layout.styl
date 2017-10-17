@@ -7,7 +7,7 @@ base = #00796B
 base-compliment = #11ABB0
 hover-base = #70E9dB
 hover-remote = #757575
-hot-complement = #860707
+hot-compliment = #860707
 sub-title-light = #A8A8A8
 sub-title-dark = #4A4A4A
 
@@ -198,7 +198,7 @@ header .banner-head h1 span:nth-child(n)
     font-weight 400
 
 header .banner-head h1 span:nth-child(-n+6)
-    color hot-complement
+    color hot-compliment
     font-weight 800
     letter-spacing .25em
 
@@ -525,7 +525,7 @@ header .banner-head hr
     background white !important
 
 .rangeRight::-webkit-slider-runnable-track
-    background hot-complement !important
+    background hot-compliment !important
 
 .rangeRight::-webkit-slider-thumb
     background white !important
@@ -596,6 +596,19 @@ header .banner-head hr
 
 #works
     background bg-medium
+    border 1px solid bg-medium
+
+
+// QUOTES //
+
+#quotes
+    backgroun bg-main
+
+
+// CONTACT //
+
+#contact
+    background bg-main
 
 
 // FOOTER  //
@@ -611,7 +624,7 @@ header .banner-head hr
         color white
 
 #go-top
-    margin-top -1.9em
+    margin-top -1.0em
     transform scale(2.8)
 
 #go-top .icon-up-circle
@@ -619,5 +632,6 @@ header .banner-head hr
     transition all 0.2s ease-in-out
     &:hover
         color base
+
 
 
