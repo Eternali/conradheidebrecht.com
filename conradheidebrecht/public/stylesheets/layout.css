@@ -540,6 +540,13 @@ header .banner-head hr {
   background: #ababab;
   border: 1px solid #ababab;
 }
+#works h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+#works div.col-3 {
+  color: #fff;
+}
 #quotes {
   backgroun: #2b2b2b;
 }

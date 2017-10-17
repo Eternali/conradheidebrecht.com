@@ -271,29 +271,31 @@ block content
     section#works
         div.container-fluid
             div.row.pt-5
-                div.col-12.mt-3(align='center') <h1>WORKS</h1>
+                div.col-12.mt-3(align='center') <h1>check out some of my projects!</h1>
             // start projects
             div.row.mb-4
                 div.col-3.mt-3.mb-3(align='center')
-                    img.workpic(src='images/defmatrix01.png')
-                    div.overview
-                        span.name Defense Matrix
-                        span.desc A security solution for Linux servers including automatic firewall setup, password
-                            | complexity checking, rootkit detection and attack visualization.
+                    a(href='#proj01')
+                        img.workpic(src='images/defmatrix01.png')
+                        div.overlay
+                            span.name Defense Matrix
+                            p Scripting - Serverside
+                            //span.desc A security solution for Linux servers including automatic firewall setup, password
+                                | complexity checking, rootkit detection and attack visualization.
                 div.col-3.mt-3.mb-3(align='center')
                     img.workpic(src='images/limen01.png')
-                    div.overview
+                    div.overlay
                         span.name Limen
                         span.desc A utility for saving and reading valuable information using AES encryption.
                 div.col-3.mt-3.mb-3(align='center')
                     img.workpic(src='images/synk01.png')
-                    div.overview
+                    div.overlay
                         span.name Synkronized Coding
                         span.desc A script that enables multiple coders to work on the same file at the same time,
                             | in real time.
                 div.col-3.mt-3.mb-3(align='center')
                     img.workpic(src='images/quadcopter01.png')
-                    div.overview
+                    div.overlay
                         span.name Custom Quadcopter
                         span.desc I built a custom quadcopter piece by piece, using the MultiWii flight control system.
             div.row.mt-4.mb-4
