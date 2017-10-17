@@ -4,6 +4,7 @@
 
 // Root colors //
 base = #00796B
+base-compliment = #11ABB0
 hover-base = #70E9dB
 hover-remote = #757575
 hot-complement = #860707
@@ -610,9 +611,13 @@ header .banner-head hr
         color white
 
 #go-top
-    position absolute
-    top -50%
-    left 50%
+    margin-top -1.9em
     transform scale(2.8)
+
+#go-top .icon-up-circle
+    color white
+    transition all 0.2s ease-in-out
+    &:hover
+        color base
 
 

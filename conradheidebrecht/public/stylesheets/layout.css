@@ -551,7 +551,15 @@ header .banner-head hr {
   color: #fff;
 }
 #go-top {
+  margin-top: -1.9em;
   transform: scale(2.8);
+}
+#go-top .icon-up-circle {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+#go-top .icon-up-circle:hover {
+  color: #00796b;
 }
 @-moz-keyframes letterDrop {
   10% {
