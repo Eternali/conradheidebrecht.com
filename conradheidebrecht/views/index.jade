@@ -359,34 +359,45 @@ block content
                 div.col-12(align='left')
                     h1 Get In Touch
                     p Want to know more? Interested in my skills? Please do not hesitate to contact me!
-            form#contactForm(action='', method='post', name='contactForm')
-                fieldset
-                    div.row
-                        div.col-3(align='left')
-                            label(for='contactName') Name
-                        div.col-6(align='left')
-                            input#contactName(type='text', value='', size='40', name='contactName')
-                        div.col-3
-                    div.row
-                        div.col-3(align='left')
-                            label(for='contactEmail') Email
-                        div.col-6(align='left')
-                            input#contactEmail(type='text', value='', size='40', name='contactEmail')
-                        div.col-3
-                    div.row
-                        div.col-3(align='left')
-                            label(for='contactSubject') Subject
-                        div.col-6(align='left')
-                            input#contactSubject(type='text', value='', size='40', name='contactSubject')
-                        div.col-3
-                    div.row
-                        div.col-3(align='left')
-                            label(for='contactMessage') Message
-                        div.col-6(align='left')
-                            textarea#contactMessage(cols='39', rows='20', name='contactMessage')
-                        div.col-3
-
-
+            div.row
+                div.col-8
+                    form#contactForm(action='', method='post', name='contactForm')
+                        fieldset
+                            div.row
+                                div.col-3(align='left')
+                                    label(for='contactName') Name
+                                div.col-8(align='left')
+                                    input#contactName(type='text', value='', name='contactName')
+                                div.col-1
+                            div.row
+                                div.col-3(align='left')
+                                    label(for='contactEmail') Email
+                                div.col-8(align='left')
+                                    input#contactEmail(type='text', value='', name='contactEmail')
+                                div.col-1
+                            div.row
+                                div.col-3(align='left')
+                                    label(for='contactSubject') Subject
+                                div.col-8(align='left')
+                                    input#contactSubject(type='text', value='', name='contactSubject')
+                                div.col-1
+                            div.row
+                                div.col-3(align='left')
+                                    label(for='contactMessage') Message
+                                div.col-8(align='left')
+                                    textarea#contactMessage(rows='15', name='contactMessage')
+                                div.col-1
+                            div.row
+                                div.col-3
+                                div.col-8(align='left')
+                                    input.submit(type='button', value='Submit', onclick='sendEmail()')
+                                div.col-1
+                div.col-4.aside-info
+                    h4 More Contact Info
+                    p Conrad Heidebrecht<br/>
+                        | 67 Agnes Street<br/>
+                        | Kitchener, ON N2G 2E9, Canada<br/>
+                        | (519) 501-4327
 
     // FOOTER //
     section#footer.mt-0.pt-0.pb-4

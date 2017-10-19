@@ -592,7 +592,7 @@ header .banner-head hr {
   backgroun: #2b2b2b;
 }
 #contact {
-  background: #2b2b2b;
+  background: #1c1c1c;
 }
 #contact h1 {
   color: #a8a8a8;
@@ -606,10 +606,51 @@ header .banner-head hr {
   line-height: 72px;
   color: #ebeeee;
   float: left;
-  padding-right: 2em;
+  padding-right: 1.4em;
+}
+#contact label {
+  color: #ebeeee;
+  background: transparent;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  background: #2b2b2b;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#contact input:hover,
+#contact textarea:hover {
+  background: #4a4a4a;
+}
+#contact input:focus,
+#contact textarea:focus {
+  background: #00796b;
+}
+#contact .submit {
+  width: 100%;
+  background: #101010;
+  text-transform: uppercase;
+  color: #ebeeee;
+  letter-spacing: 0.2em;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#contact .submit:hover {
+  background: #ebeeee;
+  color: #101010;
+}
+#contact .aside-info h4 {
+  color: #ebeeee;
 }
 #footer {
-  background: #1c1c1c;
+  background: #101010;
 }
 .footer-social {
   transform: scale(2);

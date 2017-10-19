@@ -10,11 +10,13 @@ hover-remote = #757575
 hot-compliment = #860707
 sub-title-light = #A8A8A8
 sub-title-dark = #4A4A4A
+label-light = #EBEEEE
 
 bg-main = #2B2B2B
 bg-light = #fff
 bg-medium = #ababab
 bg-dark = #1C1C1C
+bg-darker = #101010
 bg-img = #cdcdcd
 
 //  main body  //
@@ -657,7 +659,7 @@ header .banner-head hr
 // CONTACT //
 
 #contact
-    background bg-main
+    background bg-dark
 
 #contact h1
     color sub-title-light
@@ -669,18 +671,54 @@ header .banner-head hr
     content '\f0e0'
     font-size 72px
     line-height 72px
-    color #EBEEEE
+    color label-light
     float left
-    padding-right 2em
+    padding-right 1.4em
 
 #contact label
-    
+    color label-light
+    background transparent
+
+#contact input, #contact textarea
+    width 100%
+    background bg-main
+    border-radius 3px
+
+    -webkit-transition all .2s ease-in-out
+    -moz-transition all .2s ease-in-out
+    -o-transition all .2s ease-in-out
+    transition all .2s ease-in-out
+
+    &:hover
+        background sub-title-dark
+    &:focus
+        background base
+
+#contact .submit
+    width 100%
+    background bg-darker
+    text-transform uppercase
+    color label-light
+    letter-spacing .2em
+    border-radius 3px
+
+    -webkit-transition all .3s ease-in-out
+    -moz-transition all .3s ease-in-out
+    -o-transition all .3s ease-in-out
+    transition all .3s ease-in-out
+
+    &:hover
+        background label-light
+        color bg-darker
+
+#contact .aside-info h4
+    color label-light
 
 
 // FOOTER  //
 
 #footer
-    background bg-dark
+    background bg-darker
 
 .footer-social
     transform scale(2.0)
