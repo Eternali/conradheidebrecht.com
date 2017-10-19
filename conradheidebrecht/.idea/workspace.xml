@@ -30,8 +30,8 @@
           <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="295" column="66" lean-forward="true" selection-start-line="295" selection-start-column="66" selection-end-line="295" selection-end-column="66" />
+                <state relative-caret-position="352">
+                  <caret line="357" column="19" lean-forward="true" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -74,8 +74,8 @@
           <file leaf-file-name="layout.styl" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/stylesheets/layout.styl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="411">
-                  <caret line="632" column="19" lean-forward="false" selection-start-line="632" selection-start-column="19" selection-end-line="632" selection-end-column="19" />
+                <state relative-caret-position="389">
+                  <caret line="614" column="16" lean-forward="false" selection-start-line="614" selection-start-column="16" selection-end-line="614" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -130,8 +130,8 @@
         <option value="$PROJECT_DIR$/public/javascripts/textanimation.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/init.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/layout.styl" />
         <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/public/stylesheets/layout.styl" />
       </list>
     </option>
   </component>
@@ -242,12 +242,12 @@
       <workItem from="1508213470328" duration="12000" />
       <workItem from="1508241140109" duration="40000" />
       <workItem from="1508252937235" duration="5009000" />
-      <workItem from="1508356508057" duration="1525000" />
+      <workItem from="1508356508057" duration="4200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127816000" />
+    <option name="totallyTimeSpent" value="130491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
@@ -622,16 +622,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/layout.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="632" column="19" lean-forward="false" selection-start-line="632" selection-start-column="19" selection-end-line="632" selection-end-column="19" />
+        <state relative-caret-position="389">
+          <caret line="614" column="16" lean-forward="false" selection-start-line="614" selection-start-column="16" selection-end-line="614" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="295" column="66" lean-forward="true" selection-start-line="295" selection-start-column="66" selection-end-line="295" selection-end-column="66" />
+        <state relative-caret-position="352">
+          <caret line="357" column="19" lean-forward="true" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
           <folding />
         </state>
       </provider>
