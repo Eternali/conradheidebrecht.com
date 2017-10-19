@@ -594,8 +594,22 @@ header .banner-head hr {
 #contact {
   background: #2b2b2b;
 }
+#contact h1 {
+  color: #a8a8a8;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+#contact h1:before {
+  font-family: 'FontAwesome';
+  content: '\f0e0';
+  font-size: 72px;
+  line-height: 72px;
+  color: #ebeeee;
+  float: left;
+  padding-right: 2em;
+}
 #footer {
-  background: #2b2b2b;
+  background: #1c1c1c;
 }
 .footer-social {
   transform: scale(2);

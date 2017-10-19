@@ -14,6 +14,7 @@ sub-title-dark = #4A4A4A
 bg-main = #2B2B2B
 bg-light = #fff
 bg-medium = #ababab
+bg-dark = #1C1C1C
 bg-img = #cdcdcd
 
 //  main body  //
@@ -658,11 +659,25 @@ header .banner-head hr
 #contact
     background bg-main
 
+#contact h1
+    color sub-title-light
+    font-size 1.8em
+    text-transform uppercase
+
+#contact h1:before
+    font-family 'FontAwesome'
+    content '\f0e0'
+    font-size 72px
+    line-height 72px
+    color #EBEEEE
+    float left
+    padding-right 2em
+
 
 // FOOTER  //
 
 #footer
-    background bg-main
+    background bg-dark
 
 .footer-social
     transform scale(2.0)
