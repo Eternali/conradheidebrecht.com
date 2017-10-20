@@ -111,3 +111,12 @@ function pause () {
     let isContinue = $('#performance').find('input').is(':checked');
     (isContinue) ? loop() : noLoop();
 }
+
+function stopLooping () {
+    $('#performance').find('input').val('off');
+    noLoop();
+}
+function startLooping () {
+    $('#performance').find('input').val('on');
+    loop();
+}

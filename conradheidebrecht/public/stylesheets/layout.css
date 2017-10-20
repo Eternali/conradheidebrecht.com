@@ -81,6 +81,11 @@ input:checked + .slider:before {
   position: fixed;
   left: 0;
   top: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #nav-wrap ul,
 #nav-wrap li,
@@ -91,7 +96,7 @@ input:checked + .slider:before {
   outline: none;
 }
 .opaque {
-  background-color: #333;
+  background-color: rgba(50,50,50,0.8);
 }
 ul#nav-custom {
   min-height: 48px;
@@ -560,6 +565,7 @@ header .banner-head hr {
 #works .workpic {
   width: 100%;
   height: 100%;
+  border: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;

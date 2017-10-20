@@ -96,6 +96,19 @@ $(document).ready(function () {
             let activeLink = $('#nav-wrap').find('a[href="#' + activeSection.attr('id') + '"]');
             navlinks.parent().removeClass('current');
             activeLink.parent().addClass('current');
+
+            if (activeSection.attr('id') !== 'home' &&
+                $('#performance').find('input').is(':checked')) {
+                $('#nav-wrap').addClass('opaque');
+                stopLooping();
+                $('#performance').find('input').click();
+            }
+            else if (activeSection.attr('id') === 'home' &&
+                !$('#performance').find('input').is(':checked')) {
+                $('#nav-wrap').removeClass('opaque');
+                startLooping();
+                $('#performance').find('input').click();
+            }
         },
         offset: '35%'
     });
