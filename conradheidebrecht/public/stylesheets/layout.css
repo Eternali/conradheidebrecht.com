@@ -145,10 +145,12 @@ header .banner-head {
   text-align: center;
 }
 header .banner-head h1 {
+  display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 4.4em;
   letter-spacing: 0.3em;
+  line-height: 1.2em;
   color: #fff;
   margin: 32px auto;
   height: 100%;

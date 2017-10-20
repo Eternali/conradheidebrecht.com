@@ -82,6 +82,10 @@ function toggleSkills(range) {
     }
 }
 
+// scroll to the top on page reload to avoid p5.js canvas problems
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 
 $(document).ready(function () {
 
