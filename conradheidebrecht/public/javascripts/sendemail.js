@@ -17,8 +17,8 @@
 function sendEmail () {
     let req = new XMLHttpRequest();
     req.onreadystatechange = function () {
-        if (req.readyState == 4) {
-            if (req.status != 200) {
+        if (req.readyState === 4) {
+            if (req.status !== 200) {
                 document.getElementById('emailsuccess').innerHTML = "errors.";
             }
             else {
@@ -26,7 +26,7 @@ function sendEmail () {
                 document.getElementById('emailsuccess').innerHTML = response.success;
             }
         }
-    }
+    };
     req.open('POST', '/send_email');
     req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 

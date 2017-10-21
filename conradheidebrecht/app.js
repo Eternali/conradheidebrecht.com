@@ -5,7 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var stylus = require('stylus');
-var nodemailer = require('nodemailer');
+var sgMail = require(@sendgrid/mail);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -45,5 +46,14 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error');
 });
+
+// // use sendgrid api to send messages
+// const msg = {
+//     to: email,
+//     from: selfemail,
+//     subject: subj,
+//     text: message
+// };
+// sgMail.send(msg);
 
 module.exports = app;
