@@ -27,7 +27,7 @@ function sendEmail () {
             }
         }
     };
-    req.open('POST', '/send_email');
+    req.open('POST', '/sendemail');
     req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     let selfemail = 'crbheide@edu.uwaterloo.ca';
@@ -41,7 +41,7 @@ function sendEmail () {
                             'selfemail': selfemail,
                             'name': name,
                             'email': email,
-                            'subject': subject,
+                            'subj': subject,
                             'message': message
                         }));
 
