@@ -1,19 +1,3 @@
-// 'use strict';
-// const nodemailer = require('nodemailer');
-//
-// let transport = nodemailer.createTransport('SMTP', {
-//     service: 'gmail',
-//     auth: {
-//         user: '',
-//         pass: ''
-//     }
-// });
-//
-// let message = {
-//
-// };
-
-
 function sendEmail () {
 
     let parameters = {
