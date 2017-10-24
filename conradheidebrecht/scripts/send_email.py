@@ -11,8 +11,12 @@ from sys import argv
 
 emailpattern = re.compile('[^@]+@[^@]+\.[^@]+')
 
-email = """From: %s <%s>\nTo: Conrad Heidebrecht <%s>\nSubject: %s\n\n%s\n""" % (argv[1], argv[2], 
-                                                                                argv[3], argv[4], argv[5])
+email = """From: %s <%s>
+To: Conrad Heidebrecht <%s>
+Subject: %s
+
+%s
+""" % (argv[1], argv[2], argv[3], argv[4], argv[5])
 
 try:
     if not emailpattern.match(argv[2]):
