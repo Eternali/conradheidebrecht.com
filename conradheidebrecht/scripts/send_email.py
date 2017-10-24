@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 '''
-send_email.py
+send_email.py from_name from_email to_email subject body_text
 
 Author: Conrad Heidebrecht 21 October 2017    v. 0.0.1
 '''
