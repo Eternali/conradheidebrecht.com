@@ -9,12 +9,14 @@ router.get('/', function(req, res, next) {
 });
 
 /* POST requests for sending email. */
-router.get('/sendemail', function (req, res) {
+router.post('/sendemail', function (req, res) {
     let self = req.query.selfemail;
     let name = req.query.name;
     let email = req.query.email;
     let subj = req.query.subject;
     let message = req.query.message;
+
+    console.log(self + name + email + subj + message);
 
     let success = true;
 

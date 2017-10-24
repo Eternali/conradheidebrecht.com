@@ -7,8 +7,11 @@ function sendEmail () {
         subject: $('#contactSubject').val(),
         message: $('#contactMessage').val()
     };
-    $.get('/sendemail', parameters, function (data) {
+    $.ajax({type: 'POST', data: JSON.stringify(prameters), contentType: 'application/json', url: '/sendemail', success: function (data) {
         $('#emailresult').html(data);
-    });
+    }});
+    //$.get('/sendemail', parameters, function (data) {
+    //    $('#emailresult').html(data);
+    //});
 
 }
