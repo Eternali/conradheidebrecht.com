@@ -18,8 +18,6 @@ router.post('/sendemail', function (req, res) {
 
     console.log(self + name + email + subj + message);
 
-    let success = true;
-
     let options = {
         mode: 'text',
         pythonPath: '/usr/bin/python3',
@@ -29,12 +27,10 @@ router.post('/sendemail', function (req, res) {
     };
 
     pythonshell.run('send_email.py', options, function (error, results) {
-        if (error) success = false;
+        if (error) throw error;
         console.log('results: %j', results);
+        res.send(results);
     });
-
-    if (success) res.send('Your email has been sent. Thanks!');
-    else res.send('Your email has failed to send. Please check your information!');
 });
 
 module.exports = router;
