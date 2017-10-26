@@ -23,6 +23,9 @@ try:
         raise TypeError
     smtp = smtplib.SMTP('localhost')
     smtp.sendmail(argv[2], [argv[3]], email)
+    print("Your email has been sent. Thanks!")
+except TypeError:
+    print("Please check that your email address is valid.")
 except:
-    raise EnvironmentError 
+    print("Your email has failed to send. Please check your information.")
 

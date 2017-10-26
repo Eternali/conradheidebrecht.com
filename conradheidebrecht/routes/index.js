@@ -10,11 +10,11 @@ router.get('/', function(req, res, next) {
 
 /* POST requests for sending email. */
 router.post('/sendemail', function (req, res) {
-    let self = req.query.selfemail;
-    let name = req.query.name;
-    let email = req.query.email;
-    let subj = req.query.subject;
-    let message = req.query.message;
+    let self = req.body.selfemail;
+    let name = req.body.name;
+    let email = req.body.email;
+    let subj = req.body.subject;
+    let message = req.body.message;
 
     console.log(self + name + email + subj + message);
 
@@ -22,17 +22,14 @@ router.post('/sendemail', function (req, res) {
 
     let options = {
         mode: 'text',
-        pythonPath: 'usr/bin/python3',
+        pythonPath: '/usr/bin/python3',
         pythonOptions: ['-u'],
         scriptPath: 'scripts',
         args: [name, email, self, subj, message]
     };
 
     pythonshell.run('send_email.py', options, function (error, results) {
-        if (error) {
-            success = false;
-            throw error;
-        }
+        if (error) success = false;
         console.log('results: %j', results);
     });
 
