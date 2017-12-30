@@ -245,6 +245,15 @@ header .banner-head hr {
   background: #00796b;
   margin: 52px auto 32px auto;
 }
+#about #photocreds {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#about .profile-container:hover #photocreds {
+  visibility: visible;
+  opacity: 1;
+}
 #about h2 {
   font-family: 'opensans-bold', sans-serif;
   font-size: 1.8em;
