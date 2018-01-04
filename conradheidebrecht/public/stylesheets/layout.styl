@@ -299,6 +299,23 @@ header .banner-head hr
     background base
     margin 52px auto 32px auto
 
+#about #photocreds
+    visibility hidden
+    opacity 0
+    transition all 0.3s ease-in-out
+
+    numchars = 17
+    degoff = -30deg
+    // for i in (1..numchars)
+    //     &:nth-child({i})
+    //         transform rotate(degoff)
+    //     degoff = degoff + 6deg
+
+#about .profile-container:hover
+    & #photocreds
+        visibility visible
+        opacity 1
+
 #about h2
     font-family 'opensans-bold', sans-serif
     font-size 1.8em
@@ -748,6 +765,3 @@ header .banner-head hr
     transition all 0.2s ease-in-out
     &:hover
         color base
-
-
-
