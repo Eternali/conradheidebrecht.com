@@ -31,7 +31,7 @@ block content
             h1.responsive-headline.title-name Conrad Heidebrecht
             // note for multiline raw text, either put a `.` after the tag, or start each new line with a `|`.
             h3 I'm a <a href='https://uwaterloo.ca/systems-design-engineering'>Systems Design Engineering</a> student
-                | at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for <span>web</span> &
+                |  at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for <span>web</span> &
                 | <span>Android</span> development and <span>machine learning</span>. Let's
                 | start scrolling and <a class='smoothscroll local' href='#about'>learn more</a>!
             hr
@@ -147,16 +147,6 @@ block content
                             div
                                 span.description Stanford University via Coursera.org
                                 span.date Jun. 2016 - Sept. 2016
-                        li
-                            h2 Biomedical Mini-Enrichment Course
-                            div
-                                span.description Carleton University
-                                span.date May 2015
-                        li
-                            h2 Physics Mini-Enrichment Course
-                            div
-                                span.description University of Ottawa
-                                span.date May 2013
             div.row
                 div.col-1
                 div.col-10 <hr />
@@ -181,6 +171,28 @@ block content
                                         | I set up multiple Ubuntu web servers for both testing and production purposes
                                         | as well as developed several custom scripts to streamline project installation
                                         | and backup, data import and export, and project configuration.
+                        li
+                            h2 Espial Group Inc.
+                            div
+                                span.title Server-side Cloud Developer
+                                span.date Jan. 2018 - Apr. 2018
+                            div.description
+                                ul
+                                    li <span class='lititle'>Amazon Web Services:&nbsp;</span>
+                                        |  I helped build several APIs utilizing services including Lambda, API Gateway,
+                                        | S3, ECS, ELB, and RDS. In the process, I became familiar with AWS management tools,
+                                        | and a frequent user of the python and node.js SDKs.
+                                    li <span class='lititle'>Infastructure as Code:&nbsp;</span>
+                                        | I helped design, implement, test and release a standalone REST API from the ground up
+                                        | with Cloudformation and Boto3. I also helped migrate on-premise infrastructure to AWS
+                                        | with Terraform and Docker.
+                                    li <span class='lititle'>Automated Testing:&nbsp;</span>
+                                        | I added features to the company’s (Qunit based) test runner, as well as pioneered the
+                                        | utilization of Mocha/Chai within the company.
+                                    li <span class='lititle'>Continuous Integration:&nbsp;</span>
+                                        | I helped add new builds to Jenkins, wrote new tasks in Gradle, and helped migrate the
+                                        | company’s code hosting and VCS from Bitbucket to Gitlab, retrofitting Jenkins builds
+                                        | to be run with Gitlab CI.
 
     // SKILLS section //
     section#skills
@@ -446,8 +458,8 @@ block content
     section#footer.mt-0.pt-0.pb-4
         div.container-fluid.mt-0.pt-0
             // scrolldown button
-            //- div.row.mt-0.mb-0
-            //-     div.col-12(align='center')
+            div.row.mt-0.mb-0
+                div.col-12(align='center')
             //-         div#go-top
             //-             a.smoothscroll(href='#home', title='Back to Top')
             //-                 i.icon-up-circle
