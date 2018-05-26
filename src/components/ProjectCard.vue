@@ -1,9 +1,6 @@
 <script>
 export default {
   name: 'ProjectCard',
-  components: {
-    VModel: Buefy.VModel
-  },
   props: {
     title: String,
     msg: String,
@@ -13,7 +10,7 @@ export default {
   },
   render() {
     return (
-      <b-model width='640' scroll='keep'>
+      <b-modal active={true} width='640' scroll='keep'>
         <div class='card'>
           <div class='card-image'>
             <figure class='image is-4by3'>
@@ -24,11 +21,15 @@ export default {
             <div class='media'>
               <div class='media-content'>
                 <p class='title is-4'>{ this.title }</p>
+                <p class='subtitle is-6'>{ this.msg }</p>
               </div>
             </div>
           </div>
+          <div class='content'>
+            <p class='subtitle is-6'>{ this.footer }</p>
+          </div>
         </div>
-      </b-model>
+      </b-modal>
     );
   }
 }

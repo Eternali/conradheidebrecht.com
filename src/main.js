@@ -4,8 +4,8 @@ import 'buefy/lib/buefy.css'
 
 import App from './App.vue'
 
-Vue.config.productionTip = false
 Vue.use(Buefy)
+Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App)

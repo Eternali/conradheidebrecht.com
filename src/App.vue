@@ -10,7 +10,11 @@ export default {
   render() {
     return (
       <div id="app">
-        <ProjectCard msg='Welcome to JSX' img={ logo } />
+        <ProjectCard
+          title='WAToPlan'
+          msg='A simple, yet flexible time management app.'
+          img={ logo }
+          link='https://play.google.com/apps/testing/com.chipthinkstudios.watoplan.free' />
       </div>
     );
   }
