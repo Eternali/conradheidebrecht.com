@@ -10,6 +10,13 @@ export default {
   render() {
     return (
       <div id="app">
+        <section class='hero is-fullheight has-background-black'>
+          <div class='hero-body'>
+            <div class='container'>
+              <p class title is-4>CONRAD HEIDEBRECHT</p>
+            </div>
+          </div>
+        </section>
         <ProjectCard
           title='WAToPlan'
           msg='A simple, yet flexible time management app.'
@@ -29,5 +36,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
