@@ -14,7 +14,7 @@ export default {
                 <p class='title center is-size-1-touch is-size-1-desktop'>{ this.name }</p>
                 <p class='subtitle'>{ this.subtitle }</p>
                 <hr />
-                <ul>
+                <ul class='socialList'>
                 { this.links.map((link) => (<li>{ link }</li>)) }
                 </ul>
                 </div>
@@ -30,5 +30,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.socialList li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
 }
 </style>

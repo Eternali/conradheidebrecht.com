@@ -1,20 +1,10 @@
 <script>
-import GithubBoxIcon from 'vue-material-design-icons/github-box.vue'
-import LinkedinBoxIcon from 'vue-material-design-icons/linkedin-box.vue'
-import GooglePlayIcon from 'vue-material-design-icons/google-play.vue'
-import LanguagePythonIcon from 'vue-material-design-icons/language-python.vue'
-
 import MainAttraction from './components/MainAttraction.vue'
 import ProjectCard from './components/ProjectCard.vue'
 
 export default {
   name: 'app',
   components: {
-    GithubBoxIcon,
-    LinkedinBoxIcon,
-    GooglePlayIcon,
-    LanguagePythonIcon,
-
     MainAttraction,
     ProjectCard
   },
@@ -23,19 +13,19 @@ export default {
       socialLinks: [
         {
           href: 'https://github.com/eternali',
-          icon: <GithubBoxIcon />
+          icon: <v-icon>mdi-github-box</v-icon>
         },
         {
           href: 'https://linkedin.com/in/conrad-heidebrecht-651395149',
-          icon: <LinkedinBoxIcon />
+          icon: <v-icon>mdi-linkedin-box</v-icon>
         },
         {
           href: 'https://play.google.com/store/apps/developer?id=ChipThink+Studios&hl=en',
-          icon: <GooglePlayIcon />
+          icon: <v-icon>mdi-google-play</v-icon>
         },
         {
           href: 'https://pypi.org/user/eternali/',
-          icon: <LanguagePythonIcon />
+          icon: <v-icon>mdi-language-python</v-icon>
         }
       ],
     }
@@ -66,5 +56,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+a {
+  text-decoration-style: none;
 }
 </style>

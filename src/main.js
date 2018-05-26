@@ -1,12 +1,14 @@
 import Vue from 'vue'
-import Buefy from 'buefy'
-import 'buefy/lib/buefy.css'
-import 'vue-material-design-icons/styles.css'
-// import './styles/debug.css'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import 'babel-polyfill'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import 'mdi/css/materialdesignicons.min.css'
 
+// import './styles/debug.css'
 import App from './App.vue'
 
-Vue.use(Buefy)
+Vue.use(Vuetify)
 Vue.config.productionTip = false
 
 new Vue({
