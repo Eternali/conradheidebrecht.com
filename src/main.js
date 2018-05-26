@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
+import 'vue-material-design-icons/styles.css'
+// import './styles/debug.css'
 
 import App from './App.vue'
 
