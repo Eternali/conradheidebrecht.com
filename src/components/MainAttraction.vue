@@ -46,6 +46,7 @@ export default {
 .firstname
   font-weight 700 !important
   letter-spacing 0.2em !important
+.lastname
 
 .socialList li
   display inline
