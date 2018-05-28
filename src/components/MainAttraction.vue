@@ -21,6 +21,7 @@ export default {
           <v-flex>
             <span>
               <h3 class='display-3 center firstname' style={ `color: ${this.$vuetify.theme.secondary}` }>{ this.fistname }</h3>
+              <h3 class='display-3 center lastname' style={ `color: ${this.$vuetify.theme.primary}` }>{ this.lastname }</h3>
             </span>
             <span class='subheading center'>{ this.subtitle }</span>
             <v-divider class='my-3'></v-divider>
