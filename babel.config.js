@@ -3,6 +3,7 @@ module.exports = {
     '@vue/app'
   ],
   // plugins: [
-  //   'transform-vue-jsx'
+  //   'transform-vue-jsx',
+  //   'jsx-event-modifiers'
   // ]
 }

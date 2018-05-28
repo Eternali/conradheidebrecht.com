@@ -49,14 +49,45 @@ export default {
       <div id="app">
         <v-app dark>
           <v-content>
-            <MainNav />
+            <MainNav items={ [
+              {
+                'name': 'HOME',
+                'href': () => { '#home' },
+                'icon': 'mdi-home'
+              },
+              {
+                'name': 'ABOUT',
+                'href': () => { '#about' },
+                'icon': 'mdi-information'
+              },
+              {
+                'name': 'RESUME',
+                'href': () => { '#resume' },
+                'icon': 'mdi-clipboard-text'
+              },
+              {
+                'name': 'SKILLS',
+                'href': () => { '#skills' },
+                'icon': 'mdi-file-find'
+              },
+              {
+                'name': 'WORKS',
+                'href': () => { '#works' },
+                'icon': 'mdi-projector-screen'
+              },
+              {
+                'name': 'CONTACT',
+                'href': () => { '#contact' },
+                'icon': 'mdi-contact-mail'
+              }
+            ] } />
             <MainAttraction
               name="Conrad Heidebrecht"
               subtitle={ <p>
                 I'm a <a href='https://uwaterloo.ca/systems-design-engineering'>Systems Design Engineering</a> student
-                at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for <span>web</span> &
-                <span>Android</span> development and <span>machine learning</span>. Let's
-                start scrolling and <a class='smoothscroll local' href='#about'>learn more</a>
+                at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for <span>fullstack </span>
+                web development, <span>mobile</span> development and <span>machine learning</span>. Let's
+                start scrolling and <a class='smoothscroll local' href='#about'>learn more</a>!
               </p> }
               links={ this.socialLinks }
             />
