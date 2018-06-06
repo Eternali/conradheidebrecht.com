@@ -1,4 +1,7 @@
 <script>
+import Address from './utils/Address.js'
+
+import About from './components/About.vue'
 import Footer from './components/Footer.vue'
 import MainAttraction from './components/MainAttraction.vue'
 import MainNav from './components/MainNav.vue'
@@ -7,6 +10,7 @@ import ProjectCard from './components/ProjectCard.vue'
 export default {
   name: 'app',
   components: {
+    About,
     Footer,
     MainAttraction,
     MainNav,
@@ -82,7 +86,7 @@ export default {
               }
             ] } />
             <MainAttraction
-              name="Conrad Heidebrecht"
+              name='Conrad Heidebrecht'
               subtitle={ <p>
                 I'm a <a href='https://uwaterloo.ca/systems-design-engineering'>Systems Design Engineering</a> student
                 at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for <span>fullstack </span>
@@ -90,6 +94,15 @@ export default {
                 start scrolling and <a class='smoothscroll local' href='#about'>learn more</a>!
               </p> }
               links={ this.socialLinks }
+            />
+            <About
+              name='Conrad Heidebrecht'
+              profile='./assets/profilepic.jpg'
+              about=''
+              address={ new Address('67 Agnes Street', 'Kitchener', 'N2G 2E9', 'Canada') }
+              phone='(519) 501-4327'
+              email='crbheide@edu.uwaterloo.ca'
+              resume='./assets/resume.pdf'
             />
             <Footer links={ this.socialLinks } copyYear={ this.curYear } fullname={ this.fullname } />
           </v-content>
@@ -109,4 +122,9 @@ export default {
 
 a
   text-decoration-style none
+
+@font-face {
+  font-family: TimeBurner;
+  src: url('./assets/fonts/timeburner/timeburnernormal.ttf');
+}
 </style>

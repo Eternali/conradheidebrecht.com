@@ -52,6 +52,7 @@ export default {
   align-items center
 
 .titlename
+  font-family TimeBurner
   font-weight 500
   letter-spacing 0.3em !important
   word-wrap break-word
