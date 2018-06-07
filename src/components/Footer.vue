@@ -8,16 +8,14 @@ export default {
   },
   render() {
     return (
-      <v-footer app fixed height='auto' class='grey darken-4' style='padding: 0.5rem'>
-        <v-layout row wrap justify-center>
-          { this.links.map((link) => 
-            <v-btn fab flat large color='primary' href={ link.href }>{ link.child }</v-btn>
-          ) }
-          <v-flex xs12 py-3 text-xs-center color='grey lighten-1' class='footer-text'>
-            &copy; {this.copyYear} - <strong>{ this.fullname }</strong>
-          </v-flex>
-        </v-layout>
-      </v-footer>
+      <v-layout row wrap justify-center class='grey darken-4' style='padding: 0.5rem'>
+        { this.links.map((link) => 
+          <v-btn fab flat large color='primary' href={ link.href }>{ link.child }</v-btn>
+        ) }
+        <v-flex xs12 py-3 text-xs-center color='grey lighten-1' class='footer-text'>
+          &copy; {this.copyYear} - <strong>{ this.fullname }</strong>
+        </v-flex>
+      </v-layout>
     );
   }
 }

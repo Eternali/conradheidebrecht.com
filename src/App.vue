@@ -97,14 +97,18 @@ export default {
             />
             <About
               name='Conrad Heidebrecht'
-              profile='./assets/profilepic.jpg'
+              profile='../assets/profilepic.jpg'
               about=''
               address={ new Address('67 Agnes Street', 'Kitchener', 'N2G 2E9', 'Canada') }
               phone='(519) 501-4327'
               email='crbheide@edu.uwaterloo.ca'
               resume='./assets/resume.pdf'
             />
-            <Footer links={ this.socialLinks } copyYear={ this.curYear } fullname={ this.fullname } />
+            <Footer
+              links={ this.socialLinks }
+              copyYear={ this.curYear }
+              fullname={ this.fullname }
+            />
           </v-content>
         </v-app>
       </div>
