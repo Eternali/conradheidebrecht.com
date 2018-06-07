@@ -12,6 +12,11 @@ export default {
     email: String,
     resume: String,
   },
+  methods: {
+    openResume() {
+      window.open(this.resume, '_blank');
+    }
+  },
   render() {
     return (
         <v-layout column justify-center class='grey darken-2' style='padding: 2rem 0 2rem 0'>
@@ -21,7 +26,7 @@ export default {
             </v-avatar>
           </v-flex>
           <v-flex xs4>
-            <v-btn large color='primary' href={ this.resume }>
+            <v-btn large color='primary' onClick={ this.openResume }>
               <v-icon>mdi-download</v-icon>&nbsp; Download Resume
             </v-btn>
           </v-flex>

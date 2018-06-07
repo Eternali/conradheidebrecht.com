@@ -6,6 +6,7 @@ import Footer from './components/Footer.vue'
 import MainAttraction from './components/MainAttraction.vue'
 import MainNav from './components/MainNav.vue'
 import ProjectCard from './components/ProjectCard.vue'
+import resume from './assets/resume.pdf'
 
 export default {
   name: 'app',
@@ -97,7 +98,7 @@ export default {
             />
             <About
               name='Conrad Heidebrecht'
-              profile='./assets/profilepic.jpg'
+              profile={ require('./assets/profilepic.jpg') }
               about=''
               address={ new Address('67 Agnes Street', 'Kitchener', 'N2G 2E9', 'Canada') }
               phone='(519) 501-4327'
