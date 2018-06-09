@@ -6,7 +6,6 @@ import Footer from './components/Footer.vue'
 import MainAttraction from './components/MainAttraction.vue'
 import MainNav from './components/MainNav.vue'
 import ProjectCard from './components/ProjectCard.vue'
-import resume from './assets/resume.pdf'
 
 export default {
   name: 'app',
