@@ -30,17 +30,17 @@ export default {
             <v-flex xs6 md4 lg2 xl2 offset-xs3 offset-md4 offset-lg5 offset-xl-5>
               <img src={ this.profile } alt='avatar' style='border-radius: 50%; max-width: 100%' />
             </v-flex>
-            <v-layout row wrap>
+            <v-layout row wrap style='margin: 2rem 1rem'>
               <v-flex xs12 md8 lg5 offset-lg2>
-                <v-card color='grey darken-1' dark style='margin: 2rem 1rem'>
-                  <v-card-title primary class='title'>About</v-card-title>
-                  <v-card-text>{ this.about }</v-card-text>
+                <v-card color='grey darken-1' dark style='margin: 1rem 1rem 0rem 1rem; border-radius: 24px'>
+                  <v-card-text primary class='title' style='text-align: left'>About</v-card-text>
+                  <v-card-text style='text-align: left'>{ this.about }</v-card-text>
                 </v-card>
               </v-flex>
               <v-flex xs12 md4 lg3 align-end>
-                <v-card color='purple' dark style='margin: 2rem 1rem'>
-                  <v-card-title primary class='title'>Contact</v-card-title>
-                  <v-card-text>
+                <v-card color='purple' dark class='' style='margin: 1rem 1rem 1rem 1rem; border-radius: 24px'>
+                  <v-card-text primary class='title' style='text-align: right'>Contact</v-card-text>
+                  <v-card-text style='text-align: right'>
                     { this.name }<br />
                     { this.address.street }<br />
                     { this.address.city },&nbsp;
@@ -54,7 +54,7 @@ export default {
               </v-flex>
             </v-layout>
             <v-flex>
-              <v-btn large color='primary' onClick={ this.openResume }>
+              <v-btn large color='primary' onClick={ this.openResume } style='border-radius: 24px'>
                 <v-icon>mdi-download</v-icon>&nbsp; Download Resume
               </v-btn>
             </v-flex>
@@ -65,3 +65,7 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+
+</style>

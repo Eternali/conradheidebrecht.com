@@ -118,6 +118,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import url(https://fonts.googleapis.com/css?family=Quando)
+*, *:after, *:before
+  box-sizing border-box
+*
+  margin 0
+  padding 0
+  border 0 none
+  position relative
+  outline none
+
 #app
   font-family 'Avenir', 'Helvetica', 'Arial', 'sans-serif'
   -webkit-font-smoothing antialiased
@@ -125,7 +135,24 @@ export default {
   text-align center
 
 a
-  text-decoration-style none
+  text-decoration none
+  color $primary
+  z-index 1
+a:before
+  content ""
+  position absolute
+  width 100%
+  height 3px
+  bottom 0
+  left 0
+  background #fff
+  visibility hidden
+  border-radius 5px
+  transform scaleX(0)
+  transition 0.25s ease-in-out
+a:hover:before, a:focus:before
+  visibility visible
+  transform scaleX(1)
 
 @font-face {
   font-family: TimeBurner;
