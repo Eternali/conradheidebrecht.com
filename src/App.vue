@@ -98,8 +98,8 @@ export default {
             <About
               name='Conrad Heidebrecht'
               profile={ require('./assets/profilepic.jpg') }
-              about=''
-              address={ new Address('67 Agnes Street', 'Kitchener', 'N2G 2E9', 'Canada') }
+              about='I am a Systems Design Engineering student at the University of Waterloo in my first year.My main interests are for web and Android development, computer hardware, cyber security, and machine learning. I have experience through the study of several online courses as well as creating several websites from scratch as well as coding browser based applications and games with HTML5 and libraries such as P5.js and Matter.js. I also have several personal Android applications in development and my knowledge is growing rapidly. I have been most recently fascinated with machine learning and artificial intelligence. I have taken several online courses on the subject and have researched and designed my own projects that demonstrate the power of machine learning.'
+              address={ new Address('67 Agnes Street', 'Kitchener', 'ON', 'N2G 2E9', 'Canada') }
               phone='(519) 501-4327'
               email='crbheide@edu.uwaterloo.ca'
               resume='./assets/resume.pdf'
