@@ -1,7 +1,9 @@
 <script>
 import Address from './utils/Address.js'
+import Education from './utils/Education.js'
 
 import About from './components/About.vue'
+import RelevantEducation from "./components/RelevantEducation.vue"
 import Footer from './components/Footer.vue'
 import MainAttraction from './components/MainAttraction.vue'
 import MainNav from './components/MainNav.vue'
@@ -53,38 +55,40 @@ export default {
       <div id="app">
         <v-app dark>
           <v-content>
-            <MainNav items={ [
-              {
-                'name': 'HOME',
-                'href': () => { '#home' },
-                'icon': 'mdi-home'
-              },
-              {
-                'name': 'ABOUT',
-                'href': () => { '#about' },
-                'icon': 'mdi-information'
-              },
-              {
-                'name': 'RESUME',
-                'href': () => { '#resume' },
-                'icon': 'mdi-clipboard-text'
-              },
-              {
-                'name': 'SKILLS',
-                'href': () => { '#skills' },
-                'icon': 'mdi-file-find'
-              },
-              {
-                'name': 'WORKS',
-                'href': () => { '#works' },
-                'icon': 'mdi-projector-screen'
-              },
-              {
-                'name': 'CONTACT',
-                'href': () => { '#contact' },
-                'icon': 'mdi-contact-mail'
-              }
-            ] } />
+            <MainNav
+              items={ [
+                {
+                  'name': 'HOME',
+                  'href': () => { '#home' },
+                  'icon': 'mdi-home'
+                },
+                {
+                  'name': 'ABOUT',
+                  'href': () => { '#about' },
+                  'icon': 'mdi-information'
+                },
+                {
+                  'name': 'RESUME',
+                  'href': () => { '#resume' },
+                  'icon': 'mdi-clipboard-text'
+                },
+                {
+                  'name': 'SKILLS',
+                  'href': () => { '#skills' },
+                  'icon': 'mdi-file-find'
+                },
+                {
+                  'name': 'WORKS',
+                  'href': () => { '#works' },
+                  'icon': 'mdi-projector-screen'
+                },
+                {
+                  'name': 'CONTACT',
+                  'href': () => { '#contact' },
+                  'icon': 'mdi-contact-mail'
+                }
+              ] }
+            />
             <MainAttraction
               name='Conrad Heidebrecht'
               subtitle={ <p>
@@ -103,6 +107,15 @@ export default {
               phone='(519) 501-4327'
               email='crbheide@edu.uwaterloo.ca'
               resume='./assets/resume.pdf'
+            />
+            <RelevantEducation
+              formal={ [
+                new Education('University of Waterloo', 'Candidate for Bachelor of Applied Science', 'Waterloo, ON', 'Sept. 2017', 'present'),
+                new Education('Rockway Mennnonite Collegiate', 'Ontario Secondary School Diploma', 'Kitchener, ON', 'Jun. 2017')
+              ] }
+              supplement={ [
+                new Education('University of Toronto', 'Neural Networks for Machine Learning', 'Coursera.org', 'Jun. 2016', 'Sept. 2016')
+              ] }
             />
             <Footer
               links={ this.socialLinks }
