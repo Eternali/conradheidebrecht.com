@@ -26,12 +26,12 @@ export default {
                     <v-card dark class='mx-2 edu-el'>
                       <v-layout row>
                         <v-flex xs8>
-                          <v-card-text primary class='pt-3 pb-0 pl-3 fcard-title'>{ edu.institution }</v-card-text>
-                          <v-card-text primary class='pt-0 pb-3 pl-3 fcard-sub'>{ edu.title }</v-card-text>
+                          <v-card-text primary class='pt-3 pb-0 pl-3 ecard-title'>{ edu.institution }</v-card-text>
+                          <v-card-text primary class='pt-0 pb-3 pl-3 ecard-sub'>{ edu.title }</v-card-text>
                         </v-flex>
                         <v-flex xs4 class='mx-auto'>
-                          <v-card-text primary class='pt-3 pb-0 pr-3 fcard-loc'>{ edu.location }</v-card-text>
-                          <v-card-text primary class='pt-1 pb-3 pr-3 fcard-when'>
+                          <v-card-text primary class='pt-3 pb-0 pr-3 ecard-loc'>{ edu.location }</v-card-text>
+                          <v-card-text primary class='pt-0 pb-3 pr-3 ecard-when'>
                             { `${edu.start}${edu.end ? ` - ${edu.end}` : ``}` }
                           </v-card-text>
                         </v-flex>
@@ -56,8 +56,19 @@ export default {
                   }
                   <v-flex xs12 md9>
                     <v-card dark class='mx-2 edu-el'>
-                      <v-card-text primary class='title'>{ edu.title }</v-card-text>
-                      <v-card-text primary>{ `${edu.institution} via ${edu.location}` }</v-card-text>
+                      <v-layout row>
+                        <v-flex xs8>
+                          <v-card-text primary class='pt-3 pb-0 pl-3 ecard-title'>{ edu.title }</v-card-text>
+                          <v-card-text primary class='pt-0 pb-3 pl-3 ecard-sub'>
+                            { `${edu.institution} via ${edu.location}` }
+                          </v-card-text>
+                        </v-flex>
+                        <v-flex xs4 class='mx-auto'>
+                          <v-card-text primary class='pt-0 pb-3 pr-3 ecard-when'>
+                            { `${edu.start}${edu.end ? ` - ${edu.end}` : ``}` }
+                          </v-card-text>
+                        </v-flex>
+                      </v-layout>
                     </v-card>
                   </v-flex>
                 </v-layout>
@@ -80,24 +91,24 @@ export default {
 .edu-el
   border-radius $cardrad
 
-.fcard-title
+.ecard-title
   text-align left
   font-size 1.6rem
   font-weight 700
   color $title-on-dark
 
-.fcard-sub
+.ecard-sub
   text-align left
   font-size 1.2rem
   font-style italic
   color $subtitle-on-dark
 
-.fcard-loc
+.ecard-loc
   text-align right
   font-size 1.4rem
   color $accent
 
-.fcard-when
+.ecard-when
   text-align right
   font-size 1.1rem
   color $subtitle-on-dark
