@@ -118,6 +118,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import './styles/themes.styl'
 @import url(https://fonts.googleapis.com/css?family=Quando)
 *, *:after, *:before
   box-sizing border-box
@@ -136,20 +137,21 @@ export default {
 
 a
   text-decoration none
+  white-space nowrap
   color $primary
   z-index 1
 a:before
   content ""
   position absolute
   width 100%
-  height 3px
+  height 2px
   bottom 0
   left 0
-  background #fff
+  background $primary
   visibility hidden
   border-radius 5px
   transform scaleX(0)
-  transition 0.25s ease-in-out
+  transition 0.20s ease-in-out
 a:hover:before, a:focus:before
   visibility visible
   transform scaleX(1)
