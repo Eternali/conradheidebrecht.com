@@ -7,43 +7,62 @@ export default {
     },
     render() {
       return (
-        <v-container fluid xs12 class='grey lighten-2' style='padding: 2rem 0'>
-          <v-flex xs12 lg-8 offset-lg2>
-            { this.formal.map(((edu, i) =>
-              <v-layout row wrap justify-center style='margin: 2rem 0rem'>
-                { (i == 0)
-                  ? <v-flex xs12 md3>
-                      <v-card color='accent' dark class='edu-title'>
-                        <v-card-text primary class='title'>Formal Education</v-card-text>
-                      </v-card>
-                    </v-flex>
-                  : <v-flex xs12 md3 />
-                }
-                <v-flex xs12 md9>
-                  <v-card dark class='edu-el'>
-                    <v-card-text primary class='title'>{ edu.institution }</v-card-text>
-                  </v-card>
-                </v-flex>
-              </v-layout>
-            )) }
-            { this.supplement.map(((edu, i) =>
-              <v-layout row wrap justify-center style='margin: 2rem 0rem'>
-                { (i == 0)
-                  ? <v-flex xs12 md3>
-                      <v-card color='secondary' dark class='edu-title'>
-                        <v-card-text primary class='title'>Supplementary Education</v-card-text>
-                      </v-card>
-                    </v-flex>
-                  : <v-flex xs12 md3 />
-                }
-                <v-flex xs12 md9>
-                  <v-card dark class='edu-el'>
-                    <v-card-text primary class='title'>{ edu.title }</v-card-text>
-                    <v-card-text primary>{ `${edu.institution} via ${edu.location}` }</v-card-text>
-                  </v-card>
-                </v-flex>
-              </v-layout>
-            )) }
+        <v-container app fluid xs12 class='py-5 px-2 grey lighten-2'>
+          <v-flex xs12 lg8 offset-lg2>
+            <v-container fluid class='pt-0 pb-2 px-0'>
+              { this.formal.map(((edu, i) =>
+                <v-layout row wrap justify-center class='mb-3'>
+                  { (i == 0)
+                    ? <v-flex xs12 md3>
+                        <v-card color='accent' dark class='mx-2 mb-3 edu-title'>
+                          <v-card-text primary class='title'>
+                            <strong>Formal Education</strong>
+                          </v-card-text>
+                        </v-card>
+                      </v-flex>
+                    : <v-flex xs12 md3 />
+                  }
+                  <v-flex xs12 md9>
+                    <v-card dark class='mx-2 edu-el'>
+                      <v-layout row>
+                        <v-flex xs8>
+                          <v-card-text primary class='pt-3 pb-0 pl-3 fcard-title'>{ edu.institution }</v-card-text>
+                          <v-card-text primary class='pt-0 pb-3 pl-3 fcard-sub'>{ edu.title }</v-card-text>
+                        </v-flex>
+                        <v-flex xs4 class='mx-auto'>
+                          <v-card-text primary class='pt-3 pb-0 pr-3 fcard-loc'>{ edu.location }</v-card-text>
+                          <v-card-text primary class='pt-1 pb-3 pr-3 fcard-when'>
+                            { `${edu.start}${edu.end ? ` - ${edu.end}` : ``}` }
+                          </v-card-text>
+                        </v-flex>
+                      </v-layout>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              )) }
+            </v-container>
+            <v-container fluid class='py-0 px-0'>
+              { this.supplement.map(((edu, i) =>
+                <v-layout row wrap justify-center class='mt-3'>
+                  { (i == 0)
+                    ? <v-flex xs12 md3>
+                        <v-card color='secondary' dark class='mx-2 mb-3 edu-title'>
+                          <v-card-text primary class='title'>
+                            <strong>Supplementary Education</strong>
+                          </v-card-text>
+                        </v-card>
+                      </v-flex>
+                    : <v-flex xs12 md3 />
+                  }
+                  <v-flex xs12 md9>
+                    <v-card dark class='mx-2 edu-el'>
+                      <v-card-text primary class='title'>{ edu.title }</v-card-text>
+                      <v-card-text primary>{ `${edu.institution} via ${edu.location}` }</v-card-text>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              )) }
+            </v-container>
           </v-flex>
         </v-container>
       );
@@ -55,9 +74,32 @@ export default {
 @import '../styles/themes.styl'
 
 .edu-title
-  margin 0rem 1rem 0rem 2rem
+  font-family TimeBurner
   border-radius $cardrad
+
 .edu-el
-  margin 0rem 2rem 0rem 1rem
   border-radius $cardrad
+
+.fcard-title
+  text-align left
+  font-size 1.6rem
+  font-weight 700
+  color $title-on-dark
+
+.fcard-sub
+  text-align left
+  font-size 1.2rem
+  font-style italic
+  color $subtitle-on-dark
+
+.fcard-loc
+  text-align right
+  font-size 1.4rem
+  color $accent
+
+.fcard-when
+  text-align right
+  font-size 1.1rem
+  color $subtitle-on-dark
+
 </style>
