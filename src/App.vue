@@ -1,9 +1,11 @@
 <script>
 import Address from './utils/Address.js'
 import Education from './utils/Education.js'
+import Work from './utils/Work.js'
 
 import About from './components/About.vue'
 import RelevantEducation from "./components/RelevantEducation.vue"
+import RelevantWork from "./components/RelevantWork.vue"
 import Footer from './components/Footer.vue'
 import MainAttraction from './components/MainAttraction.vue'
 import MainNav from './components/MainNav.vue'
@@ -13,6 +15,8 @@ export default {
   name: 'app',
   components: {
     About,
+    RelevantEducation,
+    RelevantWork,
     Footer,
     MainAttraction,
     MainNav,
@@ -115,6 +119,49 @@ export default {
               ] }
               supplement={ [
                 new Education('University of Toronto', 'Neural Networks for Machine Learning', 'Coursera.org', 'Jun. 2016', 'Sept. 2016')
+              ] }
+            />
+            <v-divider dark color='primary' />
+            <RelevantWork
+              works={ [
+                new Work(
+                  'University of Waterloo Computer Museum',
+                  'Museum Technician',
+                  (<span>
+                    <strong>Collective Access:</strong>&nbsp;
+                    Collective Access is an open source software for managing and publishing museum and
+                    archival collections.<br />
+                    <strong>Server Administration:</strong>&nbsp;
+                    I set up multiple Ubuntu web servers for both testing and production purposes as well
+                    as developed several custom scripts to streamline project installation and backup, data
+                    import and export, and project configuration.
+                  </span>),
+                  'Oct. 2016',
+                  'Sept. 2017'
+                ),
+                new Work(
+                  'Espial Group Inc.',
+                  'Server-side Cloud Developer',
+                  (<span>
+                    <strong>Amazon Web Services:</strong>&nbsp;
+                     I helped build several APIs utilizing services including Lambda, API Gateway, S3, ECS,
+                     ELB, and RDS. In the process, I became familiar with AWS management tools, and a
+                     frequent user of the python and node.js SDKs.<br />
+                     <strong>Infastructure as Code:</strong>&nbsp;
+                     I helped design, implement, test and release a standalone REST API from the ground up
+                     with Cloudformation and Boto3. I also helped migrate on-premise infrastructure to
+                     AWS with Terraform and Docker.<br />
+                     <strong>Automated Testing:</strong>&nbsp;
+                     I added features to the company’s (Qunit based) test runner, as well as pioneered
+                     the utilization of Mocha/Chai within the company.<br />
+                     <strong>Continuous Integration:</strong>&nbsp;
+                     I helped add new builds to Jenkins, wrote new tasks in Gradle, and helped migrate
+                     the company’s code hosting and VCS from Bitbucket to Gitlab, retrofitting Jenkins
+                     builds to be run with Gitlab CI.
+                  </span>),
+                  'Jan. 2018',
+                  'Apr. 2018'
+                )
               ] }
             />
             <Footer
