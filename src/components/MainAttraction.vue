@@ -16,9 +16,8 @@ export default {
   },
   render() {
     return (
-      <v-content fill-height>
-        <v-container flex>
-          <v-layout align-center>
+        <v-container flex style='height: 100vh'>
+          <v-layout fill-height align-center>
             <v-flex xs12>
               <h3 class='display-3 titlename'>
                 <span style={ `font-weight: 100; color: ${this.$vuetify.theme.secondary}` }>
@@ -41,7 +40,6 @@ export default {
             </v-flex>
           </v-layout>
         </v-container>
-      </v-content>
     );
   }
 }
