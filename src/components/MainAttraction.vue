@@ -8,7 +8,7 @@ export default {
   },
   computed: {
     firstname() {
-      return this.name.split(' ')[0].toUpperCase(); 
+      return this.name.split(' ')[0].toUpperCase();
     },
     lastname() {
       return this.name.split(' ')[1].toUpperCase();
