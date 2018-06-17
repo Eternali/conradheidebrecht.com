@@ -6,7 +6,7 @@ export default {
   },
   render() {
     return (
-      <v-container app fluid xs12 class='py-5 px-2 grey lighten-2'>
+      <v-container app fluid xs12 class='py-5 px-2 grey lighten-2' id='work'>
         <v-flex xs12 lg8 offset-lg2>
           { this.works.map((work, i) =>
             <v-layout row wrap justify-center class={ i >= this.works.length - 1 ? 'mb-0' : 'mb-3' }>

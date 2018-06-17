@@ -21,7 +21,7 @@ export default {
   },
   render() {
     return (
-      <v-container app fluid xs12 class='py-5 px-2 grey darken-3'>
+      <v-container app fluid xs12 class='py-5 px-2 grey darken-3' id='contact'>
         <v-flex xs12 lg8 offset-lg2>
           <v-layout column>
             <v-layout row justify-center>

@@ -73,32 +73,32 @@ export default {
               items={ [
                 {
                   'name': 'HOME',
-                  'href': () => { '#home' },
+                  'href': () => '#home',
                   'icon': 'mdi-home'
                 },
                 {
                   'name': 'ABOUT',
-                  'href': () => { '#about' },
+                  'href': () => '#about',
                   'icon': 'mdi-information'
                 },
                 {
                   'name': 'RESUME',
-                  'href': () => { '#resume' },
+                  'href': () => '#education',
                   'icon': 'mdi-clipboard-text'
                 },
                 {
                   'name': 'SKILLS',
-                  'href': () => { '#skills' },
+                  'href': () => '#skills',
                   'icon': 'mdi-file-find'
                 },
                 {
                   'name': 'PROJECTS',
-                  'href': () => { '#projects' },
+                  'href': () => '#projects',
                   'icon': 'mdi-projector-screen'
                 },
                 {
                   'name': 'CONTACT',
-                  'href': () => { '#contact' },
+                  'href': () => '#contact',
                   'icon': 'mdi-contact-mail'
                 }
               ] }

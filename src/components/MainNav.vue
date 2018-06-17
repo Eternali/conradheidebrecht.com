@@ -11,7 +11,7 @@
         <v-list-tile
           v-for='(item) in items'
           :key='item.name'
-          :to='item.href'
+          :href='item.href()'
           class=''
           active-class=''
         >
@@ -28,7 +28,7 @@
       <v-toolbar-side-icon class='hidden-md-and-up' @click.stop='toggleDrawer'></v-toolbar-side-icon>
       <v-spacer></v-spacer>
       <v-toolbar-items class='hidden-sm-and-down has-black-background'>
-        <v-btn v-for='item in items' :key='item.name' @click='item.href' flat>{{ item.name }}</v-btn>
+        <v-btn v-for='item in items' :key='item.name' :href='item.href()' flat>{{ item.name }}</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
     </v-toolbar>

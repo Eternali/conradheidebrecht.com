@@ -16,7 +16,7 @@ export default {
   },
   render() {
     return (
-        <v-container app fluid style='height: 100vh'>
+        <v-container app fluid style='height: 100vh' id='home'>
           <v-layout fill-height align-center>
             <v-flex xs12>
               <h3 class='display-3 titlename'>

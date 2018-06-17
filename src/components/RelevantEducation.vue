@@ -7,7 +7,7 @@ export default {
   },
   render() {
     return (
-      <v-container app fluid xs12 class='py-5 px-2 grey lighten-2'>
+      <v-container app fluid xs12 class='py-5 px-2 grey lighten-2' id='education'>
         <v-flex xs12 lg8 offset-lg2>
           <v-container fluid class='pt-0 pb-2 px-0'>
             { this.formal.map((edu, i) =>
