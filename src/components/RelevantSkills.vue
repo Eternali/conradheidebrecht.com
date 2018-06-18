@@ -21,26 +21,32 @@
       <h3 class='px-5'>{{ type }}</h3>
     </v-btn>
   </v-layout>
-  <v-container fluid grid-list-lg>
-    <v-layout row wrap xs12 lg8 offset-lg2>
-      <v-flex v-for='skill in focusedSkills' :key='skill.name' xs3 md2 lg1>
-        <transition name='skills-toggle'>
-          <v-card flat tile class='skill-card'>
-            <div class='square-content'>
-              <v-card-media
-                contain
-                height='10rem'
-                :src='skill.img'
-              />
-              <!-- <v-card-text class='px-0'>
-                {{ skill.name }}
-              </v-card-text> -->
-            </div>
-          </v-card>
-        </transition>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <v-flex xs12 lg8 offset-lg2>
+    <v-container fluid grid-list-lg>
+      <v-layout row wrap>
+        <v-flex v-for='skill in focusedSkills' :key='skill.name' xs3 md2>
+          <transition name='skills-toggle'>
+            <v-card flat tile class='square any-card'>
+              <div class='square-content'>
+                <div class='square-table'>
+                  <div class='square-table-cell'>
+                    <v-card-media
+                      contain
+                      height='8rem'
+                      :src='skill.img'
+                    />
+                    <!-- <v-card-text class='px-0'>
+                      {{ skill.name }}
+                    </v-card-text> -->
+                  </div>
+                </div>
+              </div>
+            </v-card>
+          </transition>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-flex>
 </v-container>
 </template>
 
@@ -91,20 +97,6 @@ export default {
   margin-left 0
   margin-right 0
   border-radius 0
-
-.skill-card
-  border-radius $cardrad
-  float left
-  position relative
-  width 100%
-  padding-bottom 100%
-  overflow hidden
-
-.square-content
-  position absolute
-  height 100%
-  width 100%
-  padding 0
 
 // .skill-card:after
 //   content ''

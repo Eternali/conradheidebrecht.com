@@ -332,4 +332,29 @@ h4
 .any-card
   border-radius $cardrad
 
+$square-width = 100%
+.square
+  float left
+  position relative
+  width $square-width
+  padding-bottom $square-width
+  overflow hidden
+
+.square-content
+  position absolute
+  height 100%
+  width 100%
+  padding 0
+
+.square-table
+  display table
+  height 100%
+  width 100%
+
+.square-table-cell
+  display table-cell
+  vertical-align middle
+  height 100%
+  width 100%
+
 </style>
