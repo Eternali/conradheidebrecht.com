@@ -1,6 +1,7 @@
 <script>
 import Address from './utils/Address.js'
 import Education from './utils/Education.js'
+import Project from './utils/Project.js'
 import Skill from './utils/Skill.js'
 import Work from './utils/Work.js'
 
@@ -175,49 +176,63 @@ export default {
               ] }
             />
             <RelevantSkills
-              languages={ [
-                new Skill('Python', 'lang', require('./assets/images/langs/python.png'), 'python.org'),
-                new Skill('Javascript', 'lang', require('./assets/images/langs/javascript.png'), 'javascript.org'),
-                new Skill('Kotlin', 'lang', require('./assets/images/langs/kotlin.png'), 'kotlinlang.org'),
-                new Skill('Dart', 'lang', require('./assets/images/langs/dart.png'), 'dart.org'),
-                new Skill('C++', 'lang', require('./assets/images/langs/cpp.png'), 'dart.org'),
-                new Skill('CSS 3', 'lang', require('./assets/images/langs/CSS3.png'), 'dart.org'),
-                new Skill('HTML 5', 'lang', require('./assets/images/langs/HTML5.png'), 'dart.org'),
-                new Skill('Java', 'lang', require('./assets/images/langs/java.png'), 'dart.org'),
-                new Skill('MySQL', 'lang', require('./assets/images/langs/mysql.png'), 'dart.org'),
-                new Skill('Octave', 'lang', require('./assets/images/langs/octave.png'), 'dart.org'),
-                new Skill('Stylus', 'lang', require('./assets/images/langs/stylus.png'), 'dart.org'),
-                new Skill('Pug', 'lang', require('./assets/images/langs/pug.svg'), 'dart.org'),
-                new Skill('Latex', 'lang', require('./assets/images/langs/latex.png'), 'dart.org'),
-              ] }
-              technologies={ [
-                new Skill('Flutter', 'sdk', require('./assets/images/techs/flutter.jpg'), 'flutter.io'),
-                new Skill('Vue', 'lib', require('./assets/images/techs/vue.png'), 'vuejs.org'),
-                new Skill('Android', 'lib', require('./assets/images/techs/android-studio.png'), 'vuejs.org'),
-                new Skill('Arduino', 'lib', require('./assets/images/techs/arduino.png'), 'vuejs.org'),
-                new Skill('AWS', 'lib', require('./assets/images/techs/aws.jpg'), 'vuejs.org'),
-                new Skill('Bootstrap', 'lib', require('./assets/images/techs/bootstrap.png'), 'vuejs.org'),
-                new Skill('Chai', 'lib', require('./assets/images/techs/chai.png'), 'vuejs.org'),
-                new Skill('Docker', 'lib', require('./assets/images/techs/docker.png'), 'vuejs.org'),
-                new Skill('Express', 'lib', require('./assets/images/techs/express.png'), 'vuejs.org'),
-                new Skill('Git', 'lib', require('./assets/images/techs/git.png'), 'vuejs.org'),
-                new Skill('Gitlab CI', 'lib', require('./assets/images/techs/gitlab.png'), 'vuejs.org'),
-                new Skill('Gradle', 'lib', require('./assets/images/techs/gradle.png'), 'vuejs.org'),
-                new Skill('Jenkins', 'lib', require('./assets/images/techs/jenkins.png'), 'vuejs.org'),
-                new Skill('JQuery', 'lib', require('./assets/images/techs/jquery.png'), 'vuejs.org'),
-                new Skill('Mocha', 'lib', require('./assets/images/techs/mocha.png'), 'vuejs.org'),
-                new Skill('NodeJS', 'lib', require('./assets/images/techs/nodejs.png'), 'vuejs.org'),
-                new Skill('Numpy', 'lib', require('./assets/images/techs/numpy.png'), 'vuejs.org'),
-                new Skill('PixiJS', 'lib', require('./assets/images/techs/pixi.png'), 'vuejs.org'),
-                new Skill('Qunit', 'lib', require('./assets/images/techs/qunit.png'), 'vuejs.org'),
-                new Skill('Terraform', 'lib', require('./assets/images/techs/terraform.png'), 'vuejs.org'),
-                new Skill('ThreeJS', 'lib', require('./assets/images/techs/three.png'), 'vuejs.org'),
-                new Skill('Linux', 'lib', require('./assets/images/techs/tux.png'), 'vuejs.org'),
-                new Skill('VirtualBox', 'lib', require('./assets/images/techs/virtualbox.png'), 'vuejs.org'),
+              skills={ [
+                {
+                  type: 'langs',
+                  name: 'Languages',
+                  values: [
+                    new Skill('Python', 'lang', require('./assets/images/langs/python.png'), 'python.org'),
+                    new Skill('Javascript', 'lang', require('./assets/images/langs/javascript.png'), 'javascript.org'),
+                    new Skill('Kotlin', 'lang', require('./assets/images/langs/kotlin.png'), 'kotlinlang.org'),
+                    new Skill('Dart', 'lang', require('./assets/images/langs/dart.png'), 'dart.org'),
+                    new Skill('C++', 'lang', require('./assets/images/langs/cpp.png'), 'dart.org'),
+                    new Skill('CSS 3', 'lang', require('./assets/images/langs/CSS3.png'), 'dart.org'),
+                    new Skill('HTML 5', 'lang', require('./assets/images/langs/HTML5.png'), 'dart.org'),
+                    new Skill('Java', 'lang', require('./assets/images/langs/java.png'), 'dart.org'),
+                    new Skill('MySQL', 'lang', require('./assets/images/langs/mysql.png'), 'dart.org'),
+                    new Skill('Octave', 'lang', require('./assets/images/langs/octave.png'), 'dart.org'),
+                    new Skill('Stylus', 'lang', require('./assets/images/langs/stylus.png'), 'dart.org'),
+                    new Skill('Pug', 'lang', require('./assets/images/langs/pug.svg'), 'dart.org'),
+                    new Skill('Latex', 'lang', require('./assets/images/langs/latex.png'), 'dart.org'),
+                  ]
+                },
+                {
+                  type: 'techs',
+                  name: 'Technologies',
+                  values: [
+                    new Skill('Flutter', 'sdk', require('./assets/images/techs/flutter.jpg'), 'flutter.io'),
+                    new Skill('Vue', 'lib', require('./assets/images/techs/vue.png'), 'vuejs.org'),
+                    new Skill('Android', 'lib', require('./assets/images/techs/android-studio.png'), 'vuejs.org'),
+                    new Skill('Arduino', 'lib', require('./assets/images/techs/arduino.png'), 'vuejs.org'),
+                    new Skill('AWS', 'lib', require('./assets/images/techs/aws.jpg'), 'vuejs.org'),
+                    new Skill('Bootstrap', 'lib', require('./assets/images/techs/bootstrap.png'), 'vuejs.org'),
+                    new Skill('Chai', 'lib', require('./assets/images/techs/chai.png'), 'vuejs.org'),
+                    new Skill('Docker', 'lib', require('./assets/images/techs/docker.png'), 'vuejs.org'),
+                    new Skill('Express', 'lib', require('./assets/images/techs/express.png'), 'vuejs.org'),
+                    new Skill('Git', 'lib', require('./assets/images/techs/git.png'), 'vuejs.org'),
+                    new Skill('Gitlab CI', 'lib', require('./assets/images/techs/gitlab.png'), 'vuejs.org'),
+                    new Skill('Gradle', 'lib', require('./assets/images/techs/gradle.png'), 'vuejs.org'),
+                    new Skill('Jenkins', 'lib', require('./assets/images/techs/jenkins.png'), 'vuejs.org'),
+                    new Skill('JQuery', 'lib', require('./assets/images/techs/jquery.png'), 'vuejs.org'),
+                    new Skill('Mocha', 'lib', require('./assets/images/techs/mocha.png'), 'vuejs.org'),
+                    new Skill('NodeJS', 'lib', require('./assets/images/techs/nodejs.png'), 'vuejs.org'),
+                    new Skill('Numpy', 'lib', require('./assets/images/techs/numpy.png'), 'vuejs.org'),
+                    new Skill('PixiJS', 'lib', require('./assets/images/techs/pixi.png'), 'vuejs.org'),
+                    new Skill('Qunit', 'lib', require('./assets/images/techs/qunit.png'), 'vuejs.org'),
+                    new Skill('Terraform', 'lib', require('./assets/images/techs/terraform.png'), 'vuejs.org'),
+                    new Skill('ThreeJS', 'lib', require('./assets/images/techs/three.png'), 'vuejs.org'),
+                    new Skill('Linux', 'lib', require('./assets/images/techs/tux.png'), 'vuejs.org'),
+                    new Skill('VirtualBox', 'lib', require('./assets/images/techs/virtualbox.png'), 'vuejs.org'),
+                  ]
+                }
               ] }
             />
             <RelevantProjects
-
+              projects={ [
+                new Project('Defense Matrix', 'desc', [ 'security', 'linux'], ['img'], 'href'),
+                new Project('Population: Flappy'),
+                new Project(),
+              ] }
             />
             <ContactMe
               email={ this.email }

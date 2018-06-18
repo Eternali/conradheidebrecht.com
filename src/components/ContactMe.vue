@@ -25,10 +25,10 @@ export default {
         <v-flex xs12 lg8 offset-lg2>
           <v-layout column>
             <v-layout row justify-center>
-              <v-flex xs2 lg2 class='mr-2'>
+              <v-flex xs3 md2 class='mr-2'>
                 <v-icon dark size='64px'>mdi-email-outline</v-icon>
               </v-flex>
-              <v-flex xs8 lg8 class='mx-2 mb-2 text-xs-left'>
+              <v-flex xs9 md8 class='mx-2 mb-2 text-xs-left'>
                 <h2>GET IN TOUCH</h2>
                 <h4>Want to know more? Interested in what I can do? Please do not hesitate to contact me!</h4>
               </v-flex>
@@ -36,10 +36,10 @@ export default {
             <CardInput label='Name' labelColor='primary' dark />
             <CardInput label='Email' labelColor='primary' dark />
             <CardInput label='Subject' labelColor='primary' dark />
-            <CardInput label='Message' labelColor='primary' dark lines='10' />
+            <CardInput label='Message' labelColor='primary' dark lines={ 10 } />
             <v-layout row justify-center>
-              <v-flex xs2 lg2 />
-              <v-flex xs8 lg8>
+              <v-flex xs3 md2 />
+              <v-flex xs9 md8>
                 <v-btn large color='primary' onClick={ this.sendEmail } class='any-card'>
                   { this.sending
                     ? <v-progress-circular indeterminate size='34' />

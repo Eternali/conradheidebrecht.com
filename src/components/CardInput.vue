@@ -10,12 +10,12 @@ export default {
   render() {
     return (
       <v-layout row justify-center class='my-3 mx-2'>
-        <v-flex xs2 lg2>
+        <v-flex xs3 md2>
           <v-card flat dark color={ this.labelColor || 'accent' } class='mr-3 any-card card-title'>
             <v-card-text>{ this.label }</v-card-text>
           </v-card>
         </v-flex>
-        <v-flex xs8 lg8>
+        <v-flex xs9 md8>
           { (this.lines || 1) == 1
             ? <input type='text' class='mr-3 py-3 px-3 input' />
             : <textarea rows={ this.lines } class='mr-3 py-3 px-3 input' />

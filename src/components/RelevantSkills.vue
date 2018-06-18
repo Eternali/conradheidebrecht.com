@@ -4,32 +4,26 @@
     <h2>SKILLS</h2>
   </v-flex>
   <v-layout row justify-center xs12>
-    <v-flex xs12>
-      <v-btn
-        dark
-        depressed
-        @click='toggleType(possTypes.langs)'
-        :outline='!focused.contains(possTypes.langs)'
-        color='primary'
-        class='mr-0 left-btn'
-      >
-        <h3 class='px-5'>Languages</h3>
-      </v-btn>
-      <v-btn
-        dark
-        depressed
-        @click='toggleType(possTypes.techs)'
-        :outline='!focused.contains(possTypes.techs)'
-        color='primary'
-        class='ml-0 right-btn'
-      >
-        <h3 class='px-5'>Technologies</h3>
-      </v-btn>
-    </v-flex>
+    <v-btn
+      dark
+      depressed
+      color='primary'
+      v-for='(type, t) in possTypes'
+      :key='type'
+      @click='toggleType(t)'
+      :outline='focused.indexOf(t) < 0'
+      :class='{
+        "left-btn": t == 0,
+        "right-btn": t == possTypes.length - 1,
+        "middle-btn": 0 < t && t < possTypes.length - 1
+      }'
+    >
+      <h3 class='px-5'>{{ type }}</h3>
+    </v-btn>
   </v-layout>
   <v-container fluid grid-list-lg>
     <v-layout row wrap xs12 lg8 offset-lg2>
-      <v-flex v-for='skill in focusSkills' :key='skill.name' xs3 md2 lg1>
+      <v-flex v-for='skill in focusedSkills' :key='skill.name' xs3 md2 lg1>
         <transition name='skills-toggle'>
           <v-card flat tile class='any-card'>
             <v-card-media
@@ -52,27 +46,29 @@
 export default {
   name: 'RelevantSkills',
   props: {
-    languages: Array,
-    technologies: Array
+    skills: Array
   },
   data() {
     return {
-      possTypes: { langs: 'langs', techs: 'techs' },
-      focused: [ 'langs' ],
-      focusSkills: this.languages
+      possTypes: this.skills.map((skill) => skill.name),
+      focused: [ 0 ]
+    }
+  },
+  computed: {
+    focusedSkills() {
+      return [].concat(...this.skills
+        .filter((type, t) => this.focused.indexOf(t) >= 0)
+        .map((type) => type.values));
     }
   },
   methods: {
-    toggleType(type) {
-      if (this.focused.contains(type)) {
-        this.focused.remove(type);
-        this.focusedSkills();
+    toggleType(idx) {
+      let aidx = this.focused.indexOf(idx);
+      if (aidx >= 0) {
+        this.focused.splice(aidx, 1);
       } else {
-        this.focused.push(type);
-        this.focusedSkills();
+        this.focused.push(idx);
       }
-      this.focused = this.focused === this.possTypes.langs ? this.possTypes.techs : this.possTypes.langs;
-      this.focusSkills = this.focusSkills == this.languages ? this.technologies : this.languages;
     }
   }
 }
@@ -82,10 +78,17 @@ export default {
 @import '../styles/themes.styl'
 
 .left-btn
+  margin-right 0
   border-radius $cardrad 0 0 $cardrad
 
 .right-btn
+  margin-left 0
   border-radius 0 $cardrad $cardrad 0
+
+.middle-btn
+  margin-left 0
+  margin-right 0
+  border-radius 0
 
 .skill-card
   border-radius 50%
