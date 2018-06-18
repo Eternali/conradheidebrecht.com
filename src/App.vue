@@ -229,9 +229,34 @@ export default {
             />
             <RelevantProjects
               projects={ [
-                new Project('Defense Matrix', 'desc', [ 'security', 'linux'], ['img'], 'href'),
-                new Project('Population: Flappy'),
-                new Project(),
+                new Project(
+                  'Defense Matrix',
+                  'desc',
+                  ['Security', 'Linux'],
+                  [require('./assets/images/projects/defmatrix01.png')],
+                  'https://devpost.com/software/defensematrix-5xujtk'
+                ),
+                new Project(
+                  'Population: Flappy',
+                  '',
+                  ['Machine Learning', 'PixiJS'],
+                  [require('./assets/images/projects/flappy01.png')],
+                  'https://conradheidebrecht.com/#flappy'
+                ),
+                new Project(
+                  'Custom Quadcopter',
+                  '',
+                  ['Hardware', 'Robotics'],
+                  [require('./assets/images/projects/quadcopter01.jpg')],
+                  'https://conradheidebrecht.com/#quadcopter'
+                ),
+                new Project(
+                  'Custom PCs',
+                  '',
+                  ['Hardware', 'Computing'],
+                  [require('./assets/images/projects/pc01.jpg')],
+                  'https://conradheidebrecht.com/#pc'
+                )
               ] }
             />
             <ContactMe

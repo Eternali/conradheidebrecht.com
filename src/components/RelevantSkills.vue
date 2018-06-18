@@ -25,15 +25,17 @@
     <v-layout row wrap xs12 lg8 offset-lg2>
       <v-flex v-for='skill in focusedSkills' :key='skill.name' xs3 md2 lg1>
         <transition name='skills-toggle'>
-          <v-card flat tile class='any-card'>
-            <v-card-media
-              contain
-              :src='skill.img'
-              height='10rem'
-            />
-            <v-card-text class='px-0'>
-              {{ skill.name }}
-            </v-card-text>
+          <v-card flat tile class='skill-card'>
+            <div class='square-content'>
+              <v-card-media
+                contain
+                height='10rem'
+                :src='skill.img'
+              />
+              <!-- <v-card-text class='px-0'>
+                {{ skill.name }}
+              </v-card-text> -->
+            </div>
           </v-card>
         </transition>
       </v-flex>
@@ -91,18 +93,29 @@ export default {
   border-radius 0
 
 .skill-card
-  border-radius 50%
+  border-radius $cardrad
+  float left
+  position relative
+  width 100%
+  padding-bottom 100%
+  overflow hidden
 
-.skill-card:after
-  content ''
-  display block
-  padding-bottom 78%
+.square-content
+  position absolute
+  height 100%
+  width 100%
+  padding 0
 
-.skills-toggle-enter-active
-  animation skill-card-in 0.2s
+// .skill-card:after
+//   content ''
+//   display block
+//   padding-bottom 100%
 
-.skills-toggle-leave-active
-  animation skill-card-in 0.2s reverse
+// .skills-toggle-enter-active
+//   animation skill-card-in 0.2s
+
+// .skills-toggle-leave-active
+//   animation skill-card-in 0.2s reverse
 
 @keyframes skill-card-in
   0%
