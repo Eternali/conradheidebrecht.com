@@ -5,6 +5,7 @@ import 'vuetify/dist/vuetify.min.css'
 import 'babel-polyfill'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'mdi/css/materialdesignicons.min.css'
+import Vuebar from 'vuebar';
 
 import './styles/themes.styl'
 
@@ -32,6 +33,7 @@ Vue.use(Vuetify, {
     inputFocus: '#00796b'
   }
 })
+Vue.use(Vuebar)
 Vue.config.productionTip = false
 
 new Vue({

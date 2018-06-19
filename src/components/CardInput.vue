@@ -18,7 +18,9 @@ export default {
         <v-flex xs9 md8>
           { (this.lines || 1) == 1
             ? <input type='text' class='mr-3 py-3 px-3 input' />
-            : <textarea rows={ this.lines } class='mr-3 py-3 px-3 input' />
+            // : <div class='mr-3 py-3 px-3 input' v-bar>
+                : <textarea rows={ this.lines } class='mr-3 py-3 px-3 input' />
+              // </div>
           }
         </v-flex>
       </v-layout>
@@ -38,6 +40,7 @@ export default {
   width 100%
   border-radius $cardrad
   outline none
+  resize none
   background-color $input-card
   color $input-on-dark
   font-size 1.4rem

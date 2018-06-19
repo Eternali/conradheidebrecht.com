@@ -182,48 +182,48 @@ export default {
                   type: 'langs',
                   name: 'Languages',
                   values: [
-                    new Skill('Python', 'lang', require('./assets/images/langs/python.png'), 'python.org'),
-                    new Skill('Javascript', 'lang', require('./assets/images/langs/javascript.png'), 'javascript.org'),
-                    new Skill('Kotlin', 'lang', require('./assets/images/langs/kotlin.png'), 'kotlinlang.org'),
-                    new Skill('Dart', 'lang', require('./assets/images/langs/dart.png'), 'dart.org'),
-                    new Skill('C++', 'lang', require('./assets/images/langs/cpp.png'), 'dart.org'),
-                    new Skill('CSS 3', 'lang', require('./assets/images/langs/CSS3.png'), 'dart.org'),
-                    new Skill('HTML 5', 'lang', require('./assets/images/langs/HTML5.png'), 'dart.org'),
-                    new Skill('Java', 'lang', require('./assets/images/langs/java.png'), 'dart.org'),
-                    new Skill('MySQL', 'lang', require('./assets/images/langs/mysql.png'), 'dart.org'),
-                    new Skill('Octave', 'lang', require('./assets/images/langs/octave.png'), 'dart.org'),
-                    new Skill('Stylus', 'lang', require('./assets/images/langs/stylus.png'), 'dart.org'),
-                    new Skill('Pug', 'lang', require('./assets/images/langs/pug.svg'), 'dart.org'),
-                    new Skill('Latex', 'lang', require('./assets/images/langs/latex.png'), 'dart.org'),
+                    new Skill('Python', 'lang', require('./assets/images/langs/python.png'), 'https://python.org'),
+                    new Skill('Javascript', 'lang', require('./assets/images/langs/javascript.png'), 'https://javascript.com'),
+                    new Skill('Kotlin', 'lang', require('./assets/images/langs/kotlin.png'), 'https://kotlinlang.org'),
+                    new Skill('Dart', 'lang', require('./assets/images/langs/dart.png'), 'https://dartlang.org'),
+                    new Skill('C++', 'lang', require('./assets/images/langs/cpp.png'), 'https://isocpp.org'),
+                    new Skill('CSS 3', 'lang', require('./assets/images/langs/CSS3.png'), 'https://www.w3.org/Style/CSS/'),
+                    new Skill('HTML 5', 'lang', require('./assets/images/langs/HTML5.png'), 'https://www.w3.org/html/'),
+                    new Skill('Java', 'lang', require('./assets/images/langs/java.png'), 'https://docs.oracle.com/javase/10/'),
+                    new Skill('MySQL', 'lang', require('./assets/images/langs/mysql.png'), 'https://mysql.com'),
+                    new Skill('Octave', 'lang', require('./assets/images/langs/octave.png'), 'https://www.gnu.org/software/octave/'),
+                    new Skill('Stylus', 'preprocessor', require('./assets/images/langs/stylus.png'), 'https://stylus-lang.com'),
+                    new Skill('Pug', 'lang', require('./assets/images/langs/pug.svg'), 'https://pugjs.org'),
+                    new Skill('Latex', 'lang', require('./assets/images/langs/latex.png'), 'https://www.latex-project.org'),
                   ]
                 },
                 {
                   type: 'techs',
                   name: 'Technologies',
                   values: [
-                    new Skill('Flutter', 'sdk', require('./assets/images/techs/flutter.jpg'), 'flutter.io'),
-                    new Skill('Vue', 'lib', require('./assets/images/techs/vue.png'), 'vuejs.org'),
-                    new Skill('Android', 'lib', require('./assets/images/techs/android-studio.png'), 'vuejs.org'),
-                    new Skill('Arduino', 'lib', require('./assets/images/techs/arduino.png'), 'vuejs.org'),
-                    new Skill('AWS', 'lib', require('./assets/images/techs/aws.jpg'), 'vuejs.org'),
-                    new Skill('Bootstrap', 'lib', require('./assets/images/techs/bootstrap.png'), 'vuejs.org'),
-                    new Skill('Chai', 'lib', require('./assets/images/techs/chai.png'), 'vuejs.org'),
-                    new Skill('Docker', 'lib', require('./assets/images/techs/docker.png'), 'vuejs.org'),
-                    new Skill('Express', 'lib', require('./assets/images/techs/express.png'), 'vuejs.org'),
-                    new Skill('Git', 'lib', require('./assets/images/techs/git.png'), 'vuejs.org'),
-                    new Skill('Gitlab CI', 'lib', require('./assets/images/techs/gitlab.png'), 'vuejs.org'),
-                    new Skill('Gradle', 'lib', require('./assets/images/techs/gradle.png'), 'vuejs.org'),
-                    new Skill('Jenkins', 'lib', require('./assets/images/techs/jenkins.png'), 'vuejs.org'),
-                    new Skill('JQuery', 'lib', require('./assets/images/techs/jquery.png'), 'vuejs.org'),
-                    new Skill('Mocha', 'lib', require('./assets/images/techs/mocha.png'), 'vuejs.org'),
-                    new Skill('NodeJS', 'lib', require('./assets/images/techs/nodejs.png'), 'vuejs.org'),
-                    new Skill('Numpy', 'lib', require('./assets/images/techs/numpy.png'), 'vuejs.org'),
-                    new Skill('PixiJS', 'lib', require('./assets/images/techs/pixi.png'), 'vuejs.org'),
-                    new Skill('Qunit', 'lib', require('./assets/images/techs/qunit.png'), 'vuejs.org'),
-                    new Skill('Terraform', 'lib', require('./assets/images/techs/terraform.png'), 'vuejs.org'),
-                    new Skill('ThreeJS', 'lib', require('./assets/images/techs/three.png'), 'vuejs.org'),
-                    new Skill('Linux', 'lib', require('./assets/images/techs/tux.png'), 'vuejs.org'),
-                    new Skill('VirtualBox', 'lib', require('./assets/images/techs/virtualbox.png'), 'vuejs.org'),
+                    new Skill('Flutter', 'sdk', require('./assets/images/techs/flutter.jpg'), 'https://flutter.io'),
+                    new Skill('Vue', 'lib', require('./assets/images/techs/vue.png'), 'https://vuejs.org'),
+                    new Skill('Android', 'lib', require('./assets/images/techs/android-studio.png'), 'https://android.com'),
+                    new Skill('Arduino', 'lib', require('./assets/images/techs/arduino.png'), 'https://arduino.cc'),
+                    new Skill('AWS', 'lib', require('./assets/images/techs/aws.jpg'), 'https://aws.amazon.com'),
+                    new Skill('Bootstrap', 'lib', require('./assets/images/techs/bootstrap.png'), 'https://getbootstrap.com'),
+                    new Skill('Chai', 'lib', require('./assets/images/techs/chai.png'), 'https://chaijs.com'),
+                    new Skill('Docker', 'lib', require('./assets/images/techs/docker.png'), 'https://docker.com'),
+                    new Skill('Express', 'lib', require('./assets/images/techs/express.png'), 'https://expressjs.com'),
+                    new Skill('Git', 'lib', require('./assets/images/techs/git.png'), 'https://git-scm.com'),
+                    new Skill('Gitlab CI', 'lib', require('./assets/images/techs/gitlab.png'), 'https://about.gitlab.com/gitlab-ci'),
+                    new Skill('Gradle', 'lib', require('./assets/images/techs/gradle.png'), 'https://gradle.org'),
+                    new Skill('Jenkins', 'lib', require('./assets/images/techs/jenkins.png'), 'https://jenkins.io'),
+                    new Skill('JQuery', 'lib', require('./assets/images/techs/jquery.png'), 'https://jquery.com'),
+                    new Skill('Mocha', 'lib', require('./assets/images/techs/mocha.png'), 'https://mochajs.org'),
+                    new Skill('NodeJS', 'lib', require('./assets/images/techs/nodejs.png'), 'https://nodejs.org'),
+                    new Skill('Numpy', 'lib', require('./assets/images/techs/numpy.png'), 'https://numpy.org'),
+                    new Skill('PixiJS', 'lib', require('./assets/images/techs/pixi.png'), 'https://pixijs.com'),
+                    new Skill('Qunit', 'lib', require('./assets/images/techs/qunit.png'), 'https://qunitjs.com'),
+                    new Skill('Terraform', 'lib', require('./assets/images/techs/terraform.png'), 'https://terraform.io'),
+                    new Skill('ThreeJS', 'lib', require('./assets/images/techs/three.png'), 'https://threejs.org'),
+                    new Skill('Linux', 'lib', require('./assets/images/techs/tux.png'), 'https://linux.org'),
+                    new Skill('VirtualBox', 'lib', require('./assets/images/techs/virtualbox.png'), 'https://virtualbox.org'),
                   ]
                 }
               ] }
@@ -385,5 +385,45 @@ $square-width = 100%
   vertical-align middle
   height 100%
   width 100%
+
+.vb > .vb-dragger
+  z-index 5
+  width 12px
+  right 0
+
+.vb > .vb-dragger > .vb-dragger-styler
+  -webkit-backface-visibility hidden
+  backface-visibility hidden
+  -webkit-transform rotate3d(0,0,0,0)
+  transform rotate3d(0,0,0,0)
+  -webkit-transition:
+    background-color 100ms ease-out,
+    margin 100ms ease-out,
+    height 100ms ease-out
+  transition:
+    background-color 100ms ease-out,
+    margin 100ms ease-out,
+    height 100ms ease-out
+  background-color rgba(48, 121, 244, 0.1)
+  margin 5px 5px 5px 0
+  border-radius 20px
+  height calc(100% - 10px)
+  display block
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler
+  background-color rgba(48, 121, 244, 0.3)
+
+.vb > .vb-dragger:hover > .vb-dragger-styler
+  background-color rgba(48, 121, 244,.5)
+  margin 0px
+  height 100%
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler
+  background-color rgba(48, 121, 244, 0.5)
+  margin 0px
+  height 100%
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler
+  background-color rgba(48, 121, 244, 0.5)
 
 </style>

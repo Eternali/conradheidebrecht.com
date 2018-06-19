@@ -34,6 +34,7 @@
                       contain
                       height='8rem'
                       :src='skill.img'
+                      class='skill-img'
                     />
                     <!-- <v-card-text class='px-0'>
                       {{ skill.name }}
@@ -97,6 +98,13 @@ export default {
   margin-left 0
   margin-right 0
   border-radius 0
+
+.skill-img
+  transition all 0.2s ease-in-out
+
+.square.any-card:hover
+  .skill-img
+    transform scale(1.2)
 
 // .skill-card:after
 //   content ''

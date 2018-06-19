@@ -11,7 +11,7 @@
         <v-list-tile
           v-for='(item) in items'
           :key='item.name'
-          :href='item.href()'
+          @click='$vuetify.goTo(item.href(), options)'
           class=''
           active-class=''
         >
@@ -28,7 +28,7 @@
       <v-toolbar-side-icon class='hidden-md-and-up' @click.stop='toggleDrawer'></v-toolbar-side-icon>
       <v-spacer></v-spacer>
       <v-toolbar-items class='hidden-sm-and-down has-black-background'>
-        <v-btn v-for='item in items' :key='item.name' :href='item.href()' flat>{{ item.name }}</v-btn>
+        <v-btn v-for='item in items' :key='item.name' @click='$vuetify.goTo(item.href(), options)' flat>{{ item.name }}</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
     </v-toolbar>
@@ -41,20 +41,21 @@ export default {
   name: 'MainNav',
   props: {
     items: Array,
-    mini: Boolean,
     right: Boolean,
   },
   data() {
     return {
-      drawer: false
+      drawer: false,
+      options: {
+        duration: 600,
+        offset: 0,
+        easing: 'easeInOutCubic'
+      }
     }
   },
   methods: {
     toggleDrawer() {
       this.drawer = !this.drawer;
-    },
-    toggleMini() {
-      this.mini = !this.mini;
     }
   },
 }
