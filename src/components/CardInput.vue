@@ -1,30 +1,47 @@
+<template>
+<v-layout row justify-center class='my-3 mx-2'>
+  <v-flex xs3 md2>
+    <v-card flat dark :color='labelColor' class='mr-3 any-card card-title'>
+      <v-card-text>{{ label }}</v-card-text>
+    </v-card>
+  </v-flex>
+  <v-flex xs9 md8>
+    <input v-if='lines === 1' v-model='value' type='text' class='mr-3 py-3 px-3 input' />
+    <!-- <div class='mr-3 py-3 px-3 input' v-bar></div> -->
+    <textarea
+      v-else
+      v-model='value'
+      :rows='lines'
+      class='mr-3 py-3 px-3 input'
+    />
+  </v-flex>
+</v-layout>
+</template>
+
 <script>
 export default {
   name: 'CardInput',
   props: {
     label: String,
-    labelColor: String,
+    labelColor: {
+      default: 'accent',
+      type: String
+    },
     dark: Boolean,
-    lines: Number,
+    lines: {
+      default: 1,
+      type: Number
+    }
   },
-  render() {
-    return (
-      <v-layout row justify-center class='my-3 mx-2'>
-        <v-flex xs3 md2>
-          <v-card flat dark color={ this.labelColor || 'accent' } class='mr-3 any-card card-title'>
-            <v-card-text>{ this.label }</v-card-text>
-          </v-card>
-        </v-flex>
-        <v-flex xs9 md8>
-          { (this.lines || 1) == 1
-            ? <input type='text' class='mr-3 py-3 px-3 input' />
-            // : <div class='mr-3 py-3 px-3 input' v-bar>
-                : <textarea rows={ this.lines } class='mr-3 py-3 px-3 input' />
-              // </div>
-          }
-        </v-flex>
-      </v-layout>
-    );
+  data() {
+    return {
+      value: ''
+    }
+  },
+  watch: {
+    value: function(v) {
+      this.$emit('onChange', v);
+    }
   }
 }
 </script>

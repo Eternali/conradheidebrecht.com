@@ -289,7 +289,7 @@ export default {
               ] }
             />
             <ContactMe
-              email={ this.email }
+              selfEmail={ this.email }
             />
             <Footer
               links={ this.socialLinks }
