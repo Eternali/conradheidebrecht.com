@@ -7,7 +7,7 @@
         <v-layout row wrap>
           <v-flex v-for='project in projects' :key='project.name' xs4 md3>
             <transition name='projects-toggle'>
-              <v-card flat tile class='square any-card'>
+              <v-card tile flat hover :href='project.href' class='square any-card'>
                 <div class='square-content' style='margin: 0'>
                   <div class='square-table'>
                     <div class='square-table-cell'>
@@ -21,7 +21,7 @@
                         <div>
                           <h3>{{ project.name }}</h3>
                           <p> {{ project.tags.join(' - ') }}</p>
-                          <v-btn fab flat icon :href='project.href'><v-icon>mdi-link</v-icon></v-btn><!-- or mdi-plus -->
+                          <v-btn fab flat icon><v-icon>mdi-link</v-icon></v-btn><!-- or mdi-plus -->
                         </div>
                       </div>
                     </div>
@@ -71,7 +71,7 @@ export default {
   left 0
   width 100%
   height 100%
-  line-height 14em
+  line-height 16em
   opacity 0
   transition all 0.2s ease-in-out
   & div
@@ -80,5 +80,7 @@ export default {
     line-height normal
     & h3
       margin-bottom 1em
+    & p
+      margin-bottom 0
 
 </style>

@@ -107,10 +107,11 @@ export default {
             <MainAttraction
               name='Conrad Heidebrecht'
               subtitle={ <p>
-                I'm a <a href='https://uwaterloo.ca/systems-design-engineering'>Systems Design Engineering</a> student
-                at the <a href='https://uwaterloo.ca'>University of Waterloo</a> with a passion for <span>fullstack </span>
-                web development, <span>mobile</span> development and <span>machine learning</span>. Let's
-                start scrolling and <a class='smoothscroll local' href='#about'>learn more</a>!
+                I'm a <a href='https://uwaterloo.ca/systems-design-engineering' class='a-text'>
+                Systems Design Engineering</a> student at the <a href='https://uwaterloo.ca' class='a-text'>
+                University of Waterloo</a> with a passion for <span>fullstack </span>web development,
+                <span>mobile</span> development and <span>machine learning</span>. Let's start scrolling
+                and <a class='a-text smoothscroll local' href='#about'>learn more</a>!
               </p> }
               links={ this.socialLinks }
             />
@@ -326,26 +327,26 @@ export default {
   -moz-osx-font-smoothing grayscale
   text-align center
 
-a
+.a-text
   text-decoration none
   white-space nowrap
   color $primary
   z-index 1
-a:before
-  content ""
-  position absolute
-  width 100%
-  height 2px
-  bottom 0
-  left 0
-  background $primary
-  visibility hidden
-  border-radius 5px
-  transform scaleX(0)
-  transition 0.20s ease-in-out
-a:hover:before, a:focus:before
-  visibility visible
-  transform scaleX(1)
+  &:before
+    content ""
+    position absolute
+    width 100%
+    height 2px
+    bottom 0
+    left 0
+    background $primary
+    visibility hidden
+    border-radius 5px
+    transform scaleX(0)
+    transition 0.20s ease-in-out
+  &:hover:before, &:focus:before
+    visibility visible
+    transform scaleX(1)
 
 h2
   color $title-on-dark
