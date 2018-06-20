@@ -55,14 +55,11 @@ export default {
   transition all 0.2s ease-in-out
 
 .square-content
-  // transform translateZ(0)
-  // backface-visibility hidden
-  // perspective 1000
   &:hover
     .project-img
-      filter blur(4px)
+      filter blur(3px)
+      opacity 0.5
     .overlay
-      background-color rgba(0, 0, 0, 0.3)
       opacity 1
 
 .overlay
@@ -78,7 +75,7 @@ export default {
     display inline-block
     vertical-align middle
     line-height normal
-    & h3
+  & h3
       margin-bottom 1em
     & p
       margin-bottom 0

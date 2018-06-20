@@ -15,26 +15,26 @@
         label='Name'
         labelColor='primary'
         dark
-        @onChange='(v) => { this.name = v; }'
+        @onChange='(v) => { this.name = v; this.status = this.statuses.unsent; }'
       />
       <CardInput
         label='Email'
         labelColor='primary'
         dark
-        @onChange='(v) => { this.email = v; }'
+        @onChange='(v) => { this.email = v; this.status = this.statuses.unsent; }'
       />
       <CardInput
         label='Subject'
         labelColor='primary'
         dark
-        @onChange='(v) => { this.subject = v; }'
+        @onChange='(v) => { this.subject = v; this.status = this.statuses.unsent; }'
       />
       <CardInput
         label='Message'
         labelColor='primary'
         dark
         :lines='messageLines'
-        @onChange='(v) => { this.message = v; }'
+        @onChange='(v) => { this.message = v; this.status = this.statuses.unsent; }'
       />
       <v-layout row justify-center>
         <v-flex xs3 md2 />
@@ -42,6 +42,7 @@
           <v-btn large ripple color='primary' @click='sendEmail' class='any-card'>
             <v-progress-circular v-if='status === statuses.sending' indeterminate size='34' />
             <v-icon v-else-if='status === statuses.sent' size='34'>mdi-check</v-icon>
+            <v-icon v-else-if='status === statuses.failed' size='34'>mdi-close</v-icon>
             <v-icon v-else size='34'>mdi-cube-send</v-icon>
             &nbsp; SEND
           </v-btn>
@@ -62,6 +63,7 @@ export default {
     CardInput
   },
   props: {
+    selfName: String,
     selfEmail: String
   },
   data() {
@@ -74,28 +76,49 @@ export default {
       statuses: {
         unsent: 'unsent',
         sending: 'sending',
-        sent: 'sent'
+        sent: 'sent',
+        failed: 'failed'
       },
       status: null,
     };
   },
   methods: {
+    resetInput() {
+      this.name = '';
+      this.email = '';
+      this.subject = '';
+      this.message = '';
+    },
+    encodeUrl(flatjson) {
+      return Object.entries(flatjson).map((entry) => `${entry[0]}=${entry[1]}`).join('&');
+    },
     sendEmail() {
       if (this.status === this.statuses.unsent || this.status === null) {
         this.status = this.statuses.sending;
-        let request = 'https://conradheidebrecht.com/sendemail?' + JSON.stringify({
-          selfEmail: this.selfEmail,
-          name: this.name,
-          email: this.email,
+        let request = 'https://conradheidebrecht.com:5000/sendemail/' + this.encodeUrl({
+          fname: this.name,
+          femail: this.email,
+          tname: this.selfName,
+          temail: this.selfEmail,
           subject: this.subject,
           message: this.message
         });
         console.log(request);
-        fetch(request)
-          .then(function(resp) {
-            console.log(resp);
-            this.status = this.statuses.sent;
-          });
+
+        Promise.race([
+          fetch(request),
+          new Promise((_, rej) =>
+            setTimeout(() => rej(new Error('timeout')), 10000)
+          )
+        ]).then((resp) => {
+          console.log(resp);
+          this.status = this.statuses.sent;
+          this.resetInput();
+        }).catch((err) => {
+          console.log(err);
+          this.status = this.statuses.failed;
+          this.resetInput();
+        });
       }
     }
   }

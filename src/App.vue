@@ -122,7 +122,7 @@ export default {
               address={ this.address }
               phone={ this.phone }
               email={ this.email }
-              resume='./assets/resume.pdf'
+              resume='/resume.pdf'
             />
             <RelevantEducation
               formal={ [
@@ -231,6 +231,18 @@ export default {
             <RelevantProjects
               projects={ [
                 new Project(
+                  'WAToPlan',
+                  '',
+                  ['Mobile', 'Cross-platform', 'Flutter'],
+                  [
+                    {
+                      needsFull: true,
+                      img: require('./assets/images/projects/watoplan01.png')
+                    }
+                  ],
+                  'https://github.com/eternali/watoplan_flut'
+                ),
+                new Project(
                   'Defense Matrix',
                   'desc',
                   ['Security', 'Linux'],
@@ -285,10 +297,45 @@ export default {
                     }
                   ],
                   'https://github.com/eternali/tanks'
-                )
+                ),
+                new Project(
+                  'Admonere',
+                  '',
+                  ['Android', 'Kotlin'],
+                  [
+                    {
+                      needsFull: true,
+                      img: require('./assets/images/projects/admonere01.png')
+                    }
+                  ],
+                  'https://github.com/eternali/AndroidProjects'
+                ),
+                new Project(
+                  'Limen',
+                  '',
+                  ['Scripting', 'Serverside'],
+                  [
+                    {
+                      img: require('./assets/images/projects/limen01.png')
+                    }
+                  ],
+                  'https://github.com/eternali/limen'
+                ),
+                new Project(
+                  'Synk',
+                  '',
+                  ['Collaboration Software', 'Python'],
+                  [
+                    {
+                      img: require('./assets/images/projects/synk01.jpg')
+                    }
+                  ],
+                  'https://devpost.com/software/synk-ronized-programming'
+                ),
               ] }
             />
             <ContactMe
+              selfName={ this.fullname }
               selfEmail={ this.email }
             />
             <Footer
