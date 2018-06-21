@@ -6,6 +6,7 @@ import Skill from './utils/Skill.js'
 import Work from './utils/Work.js'
 
 import About from './components/About.vue'
+import Background from './components/Background.vue'
 import ContactMe from './components/ContactMe.vue'
 import RelevantEducation from './components/RelevantEducation.vue'
 import RelevantProjects from './components/RelevantProjects.vue'
@@ -20,6 +21,7 @@ export default {
   name: 'app',
   components: {
     About,
+    Background,
     ContactMe,
     RelevantEducation,
     RelevantProjects,
@@ -69,6 +71,7 @@ export default {
     return (
       <div id="app">
         <v-app dark>
+          <Background />
           <v-content>
             <MainNav
               items={ [
