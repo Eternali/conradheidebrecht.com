@@ -47,7 +47,7 @@ class EmailSender(Resource):
 
 api.add_resource(
     EmailSender,
-    '/sendemail/fname=<fname>&femail=<femail>&tname=<tname>&temail=<temail>&subject=<subject>&message=<message>'
+    '/api/sendemail/fname=<fname>&femail=<femail>&tname=<tname>&temail=<temail>&subject=<subject>&message=<message>'
 )
 
 if __name__ == '__main__':

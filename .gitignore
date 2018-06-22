@@ -19,3 +19,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# Api files
+/api/venv
+/api/__pycache__
+

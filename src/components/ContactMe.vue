@@ -95,7 +95,7 @@ export default {
     sendEmail() {
       if (this.status === this.statuses.unsent || this.status === null) {
         this.status = this.statuses.sending;
-        let request = 'https://conradheidebrecht.com:5000/sendemail/' + this.encodeUrl({
+        let request = 'https://conradheidebrecht.com/api/sendemail/' + this.encodeUrl({
           fname: this.name,
           femail: this.email,
           tname: this.selfName,
