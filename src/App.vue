@@ -112,7 +112,7 @@ export default {
               subtitle={ <p>
                 I'm a <a href='https://uwaterloo.ca/systems-design-engineering' class='a-text'>
                 Systems Design Engineering</a> student at the <a href='https://uwaterloo.ca' class='a-text'>
-                University of Waterloo</a> with a passion for <span>fullstack </span>web development,
+                University of Waterloo</a> with a passion for <span>fullstack </span>web development,&nbsp;
                 <span>mobile</span> development and <span>machine learning</span>. Let's start scrolling
                 and <a class='a-text smoothscroll local' href='#about'>learn more</a>!
               </p> }
@@ -121,7 +121,7 @@ export default {
             <About
               name='Conrad Heidebrecht'
               profile={ require('./assets/images/profilepic.jpg') }
-              about='I am a Systems Design Engineering student at the University of Waterloo in my first year.My main interests are for web and Android development, computer hardware, cyber security, and machine learning. I have experience through the study of several online courses as well as creating several websites from scratch as well as coding browser based applications and games with HTML5 and libraries such as P5.js and Matter.js. I also have several personal Android applications in development and my knowledge is growing rapidly. I have been most recently fascinated with machine learning and artificial intelligence. I have taken several online courses on the subject and have researched and designed my own projects that demonstrate the power of machine learning.'
+              about='I am a Systems Design Engineering student at the University of Waterloo in my first year. My main interests are for web and Android development, computer hardware, cyber security, and machine learning. I have experience through the study of several online courses as well as creating several websites from scratch as well as coding browser based applications and games with HTML5 and libraries such as P5.js and Matter.js. I also have several personal Android applications in development and my knowledge is growing rapidly. I have been most recently fascinated with machine learning and artificial intelligence. I have taken several online courses on the subject and have researched and designed my own projects that demonstrate the power of machine learning.'
               address={ this.address }
               phone={ this.phone }
               email={ this.email }
