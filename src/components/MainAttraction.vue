@@ -44,8 +44,8 @@ export default {
         <v-layout fill-height align-center>
           <v-flex xs12>
             <h3 class='display-3'>
-              <span class='letterdrop' ref='firstname'></span>
-              <span class='letterdrop' ref='lastname'></span>
+              <span ref='firstname'></span> &nbsp;
+              <span ref='lastname'></span>
             </h3>
             < br/>
             <v-flex xs8 offset-xs2>
@@ -90,19 +90,27 @@ h3 > span
   &:nth-child(1)
     color $secondary
     font-weight 700
-  &:nth-child(1):after
-    content ''
-    width 0.5em
-    height 2em
-    background grey
   &:nth-child(2)
     color $primary
     font-weight 100
 
+h3 > span:nth-child(2)::after
+  content ''
+  position absolute
+  width 0.1em
+  height 1.2em
+  background #bbbbbb
+  animation cursor 1.3s linear infinite
+  animation-delay 2.2s
+
 @keyframes cursor
   0%
     opacity 0.0
+  45%
+    opacity 0.0
   50%
+    opacity 1.0
+  95%
     opacity 1.0
   100%
     opacity 0.0
