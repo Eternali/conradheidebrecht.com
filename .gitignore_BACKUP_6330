@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+node_modules
+conradheidebrecht/.idea
+conradheidebrecht/node_modules
+=======
 .DS_Store
 node_modules
 package-lock.json
@@ -19,3 +24,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+>>>>>>> vuever
