@@ -36,6 +36,9 @@ Vue.use(Vuetify, {
 Vue.use(Vuebar)
 Vue.config.productionTip = false
 
+// Vue.http.headers.common['Access-Control-Allow-Origin'] = '*'
+// Vue.http.headers.common['Access-Control-Request-Method'] = '*'
+
 new Vue({
   render: h => h(App)
 }).$mount('#app')
