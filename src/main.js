@@ -40,5 +40,5 @@ Vue.config.productionTip = false
 // Vue.http.headers.common['Access-Control-Request-Method'] = '*'
 
 new Vue({
-  render: h => h(App)
+  render: (h) => h(App)
 }).$mount('#app')
