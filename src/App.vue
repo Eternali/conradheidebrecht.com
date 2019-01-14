@@ -139,19 +139,17 @@ export default {
             <RelevantWork
               works={ [
                 new Work(
-                  'University of Waterloo Computer Museum',
-                  'Museum Technician',
+                  'Equibit Group',
+                  'Javascript developer',
                   (<span>
-                    <strong>Collective Access:</strong>&nbsp;
-                    Collective Access is an open source software for managing and publishing museum and
-                    archival collections.<br />
-                    <strong>Server Administration:</strong>&nbsp;
-                    I set up multiple Ubuntu web servers for both testing and production purposes as well
-                    as developed several custom scripts to streamline project installation and backup, data
-                    import and export, and project configuration.
+                    <strong>Blockchain development</strong>&nbsp;
+                    <strong>UI Testing</strong>&nbsp;
+                    <strong>IBM Cloud</strong>&nbsp;
+                    <strong>Feathers & Express</strong>&nbsp;
+                    <strong>Frontend UI design</strong>&nbsp;
                   </span>),
-                  'Oct. 2016',
-                  'Sept. 2017'
+                  'Sept. 2018',
+                  'Dec. 2018'
                 ),
                 new Work(
                   'Espial Group Inc.',
@@ -175,6 +173,21 @@ export default {
                   </span>),
                   'Jan. 2018',
                   'Apr. 2018'
+                ),
+                new Work(
+                  'University of Waterloo Computer Museum',
+                  'Museum Technician',
+                  (<span>
+                    <strong>Collective Access:</strong>&nbsp;
+                    Collective Access is an open source software for managing and publishing museum and
+                    archival collections.<br />
+                    <strong>Server Administration:</strong>&nbsp;
+                    I set up multiple Ubuntu web servers for both testing and production purposes as well
+                    as developed several custom scripts to streamline project installation and backup, data
+                    import and export, and project configuration.
+                  </span>),
+                  'Oct. 2016',
+                  'Sept. 2017'
                 )
               ] }
             />
