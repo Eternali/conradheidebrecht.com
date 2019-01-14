@@ -41,9 +41,8 @@ export default {
                   <v-card-text style='text-align: right'>
                     { this.name }<br />
                     { this.phone }<br />
-                    { this.email }<br />
-                    { this.keybase }
-                    <a href={`https://${this.keybase}`}>{ this.keybase }</a>
+                    <a href={ `mailto:${this.email}` } class='none' style={ `color: ${this.$vuetify.theme.bodyOnDark} !important` }>{ this.email }</a><br />
+                    <a href={ `https://${this.keybase}` } target='blank' class='none' style={ `color: ${this.$vuetify.theme.bodyOnDark} !important` }>{ this.keybase }</a>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -63,5 +62,8 @@ export default {
 
 <style lang="stylus" scoped>
 @import '../styles/themes.styl'
+
+.none
+  text-decoration none !important
 
 </style>
