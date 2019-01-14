@@ -1,15 +1,13 @@
 <script>
-import Address from '../utils/Address.js'
-
 export default {
   name: 'About',
   props: {
     name: String,
     profile: String,
     about: String,
-    address: Address,
     phone: String,
     email: String,
+    keybase: String,
     resume: String,
   },
   computed: {
@@ -42,13 +40,10 @@ export default {
                   <v-card-text primary class='title' style='text-align: right'>Contact</v-card-text>
                   <v-card-text style='text-align: right'>
                     { this.name }<br />
-                    { this.address.street }<br />
-                    { this.address.city },&nbsp;
-                    { this.address.province }&nbsp;
-                    { this.address.postal },&nbsp;
-                    { this.address.country }<br />
                     { this.phone }<br />
-                    { this.email }
+                    { this.email }<br />
+                    { this.keybase }
+                    <a href={`https://${this.keybase}`}>{ this.keybase }</a>
                   </v-card-text>
                 </v-card>
               </v-flex>

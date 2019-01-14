@@ -1,5 +1,4 @@
 <script>
-import Address from './utils/Address.js'
 import Education from './utils/Education.js'
 import Project from './utils/Project.js'
 import Skill from './utils/Skill.js'
@@ -38,7 +37,7 @@ export default {
       lastname: 'Heidebrecht',
       email: 'crbheide@edu.uwaterloo.ca',
       phone: '(519) 501-4327',
-      address: new Address('67 Agnes Street', 'Kitchener', 'ON', 'N2G 2E9', 'Canada'),
+      keybase: 'keybase.io/eternali',
       socialLinks: [
         {
           href: 'https://github.com/eternali',
@@ -122,7 +121,6 @@ export default {
               name='Conrad Heidebrecht'
               profile={ require('./assets/images/profilepic.jpg') }
               about='I am a Systems Design Engineering student at the University of Waterloo in my first year. My main interests are for web and Android development, computer hardware, cyber security, and machine learning. I have experience through the study of several online courses as well as creating several websites from scratch as well as coding browser based applications and games with HTML5 and libraries such as P5.js and Matter.js. I also have several personal Android applications in development and my knowledge is growing rapidly. I have been most recently fascinated with machine learning and artificial intelligence. I have taken several online courses on the subject and have researched and designed my own projects that demonstrate the power of machine learning.'
-              address={ this.address }
               phone={ this.phone }
               email={ this.email }
               resume='/resume.pdf'
