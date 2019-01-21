@@ -44,7 +44,7 @@ export default {
           child: <v-icon>mdi-github-box</v-icon>
         },
         {
-          href: 'https://linkedin.com/in/conrad-heidebrecht-651395149',
+          href: 'https://linkedin.com/in/conrad-heidebrecht',
           child: <v-icon>mdi-linkedin-box</v-icon>
         },
         {
