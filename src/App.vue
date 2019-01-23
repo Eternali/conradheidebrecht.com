@@ -142,11 +142,16 @@ export default {
                   'Equibit Group',
                   'Javascript developer',
                   (<span>
-                    <strong>Blockchain development</strong>&nbsp;
-                    <strong>UI Testing</strong>&nbsp;
-                    <strong>IBM Cloud</strong>&nbsp;
-                    <strong>Feathers & Express</strong>&nbsp;
-                    <strong>Frontend UI design</strong>&nbsp;
+                    <strong>Blockchain development:</strong>&nbsp;
+                    I helped build several low level utilities for manipulating transactions and blocks in Javascript.<br />
+                    <strong>UI Testing:</strong>&nbsp;
+                    I helped introduce full integration testing with Cypress and Mocha/Chai.<br />
+                    <strong>IBM Cloud:</strong>&nbsp;
+                    I managed and built deployment pipelines for Cloud Foundry applications.<br />
+                    <strong>Feathers & Express:</strong>&nbsp;
+                    I built features and tests for several of the Equibit APIs including the Wallet and Explorer APIs.<br />
+                    <strong>Frontend UI design:</strong>&nbsp;
+                    I contributed to feature requests for the Wallet application and was the sole developer for the Explorer web app.<br />
                   </span>),
                   'Sept. 2018',
                   'Dec. 2018'
