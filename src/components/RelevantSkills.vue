@@ -26,7 +26,7 @@
       <v-layout row wrap>
         <v-flex v-for='skill in focusedSkills' :key='skill.name' xs3 md2>
           <transition name='skills-toggle'>
-            <v-card tile flat hover :href='skill.href' class='square any-card'>
+            <v-card tile flat hover :href='skill.href' target='blank' class='square any-card'>
               <div class='square-content'>
                 <div class='square-table'>
                   <div class='square-table-cell'>

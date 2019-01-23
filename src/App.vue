@@ -203,18 +203,19 @@ export default {
                   name: 'Languages',
                   values: [
                     new Skill('Python', 'lang', require('./assets/images/langs/python.png'), 'https://python.org'),
-                    new Skill('Javascript', 'lang', require('./assets/images/langs/javascript.png'), 'https://javascript.com'),
                     new Skill('Kotlin', 'lang', require('./assets/images/langs/kotlin.png'), 'https://kotlinlang.org'),
                     new Skill('Dart', 'lang', require('./assets/images/langs/dart.png'), 'https://dartlang.org'),
                     new Skill('C++', 'lang', require('./assets/images/langs/cpp.png'), 'https://isocpp.org'),
-                    new Skill('CSS 3', 'lang', require('./assets/images/langs/CSS3.png'), 'https://www.w3.org/Style/CSS/'),
+                    new Skill('Javascript', 'lang', require('./assets/images/langs/javascript.png'), 'https://javascript.com'),
+                    new Skill('Typescript', 'lang', require('./assets/images/langs/typescript.svg'), 'http://typescriptlang.org'),
                     new Skill('HTML 5', 'lang', require('./assets/images/langs/HTML5.png'), 'https://www.w3.org/html/'),
+                    new Skill('CSS 3', 'lang', require('./assets/images/langs/CSS3.png'), 'https://www.w3.org/Style/CSS/'),
                     new Skill('Java', 'lang', require('./assets/images/langs/java.png'), 'https://docs.oracle.com/javase/10/'),
+                    new Skill('Solidity', 'lang', require('./assets/images/langs/solidity.png'), 'https://solidity.readthedocs.io/en/v0.5.1/'),
                     new Skill('MySQL', 'lang', require('./assets/images/langs/mysql.png'), 'https://mysql.com'),
                     new Skill('Octave', 'lang', require('./assets/images/langs/octave.png'), 'https://www.gnu.org/software/octave/'),
-                    new Skill('Stylus', 'preprocessor', require('./assets/images/langs/stylus.png'), 'https://stylus-lang.com'),
-                    new Skill('Pug', 'lang', require('./assets/images/langs/pug.svg'), 'https://pugjs.org'),
                     new Skill('Latex', 'lang', require('./assets/images/langs/latex.png'), 'https://www.latex-project.org'),
+                    new Skill('Groovy', 'lang', require('./assets/images/langs/groovy.png'), 'http://groovy-lang.org'),
                   ]
                 },
                 {
@@ -222,24 +223,40 @@ export default {
                   name: 'Technologies',
                   values: [
                     new Skill('Flutter', 'sdk', require('./assets/images/techs/flutter.jpg'), 'https://flutter.io'),
-                    new Skill('Vue', 'lib', require('./assets/images/techs/vue.png'), 'https://vuejs.org'),
+                    new Skill('Vue', 'framework', require('./assets/images/techs/vue.png'), 'https://vuejs.org'),
+                    new Skill('Vuetify', 'lib', require('./assets/images/techs/vuetify.svg'), 'https://vuetifyjs.com/en/'),
                     new Skill('Android', 'lib', require('./assets/images/techs/android-studio.png'), 'https://android.com'),
                     new Skill('Arduino', 'lib', require('./assets/images/techs/arduino.png'), 'https://arduino.cc'),
                     new Skill('AWS', 'lib', require('./assets/images/techs/aws.jpg'), 'https://aws.amazon.com'),
                     new Skill('Bootstrap', 'lib', require('./assets/images/techs/bootstrap.png'), 'https://getbootstrap.com'),
+                    new Skill('JSX', 'lang', require('./assets/images/techs/jsx.png'), 'https://jsx.github.io/'),
+                    new Skill('Stylus', 'preprocessor', require('./assets/images/techs/stylus.png'), 'https://stylus-lang.com'),
+                    new Skill('Pug', 'preprocessor', require('./assets/images/techs/pug.svg'), 'https://pugjs.org'),
+                    new Skill('DoneJS', 'framework', require('./assets/images/techs/donejs.png'), 'https://donejs.com'),
+                    new Skill('Webpack', 'lib', require('./assets/images/techs/webpack.png'), 'https://webpack.js.org/'),
+                    new Skill('Browserify', 'lib', require('./assets/images/techs/browserify.png'), 'http://browserify.org/'),
+                    new Skill('Cypress', 'lib', require('./assets/images/techs/cypress.png'), 'https://www.cypress.io/'),
+                    new Skill('Mocha', 'lib', require('./assets/images/techs/mocha.png'), 'https://mochajs.org'),
                     new Skill('Chai', 'lib', require('./assets/images/techs/chai.png'), 'https://chaijs.com'),
+                    new Skill('Qunit', 'lib', require('./assets/images/techs/qunit.png'), 'https://qunitjs.com'),
+                    new Skill('Travis CI', 'lib', require('./assets/images/techs/travis.png'), 'https://travis-ci.org/'),
                     new Skill('Docker', 'lib', require('./assets/images/techs/docker.png'), 'https://docker.com'),
                     new Skill('Express', 'lib', require('./assets/images/techs/express.png'), 'https://expressjs.com'),
+                    new Skill('FeathersJS', 'lib', require('./assets/images/techs/feathersjs.svg'), 'https://feathersjs.com/'),
+                    new Skill('Ktor', 'lib', require('./assets/images/techs/ktor.png'), 'https://ktor.io/'),
+                    new Skill('Nginx', 'server', require('./assets/images/techs/nginx.png'), 'https://www.nginx.com//'),
+                    new Skill('Apache', 'server', require('./assets/images/techs/apache.png'), 'https://httpd.apache.org/'),
                     new Skill('Git', 'lib', require('./assets/images/techs/git.png'), 'https://git-scm.com'),
                     new Skill('Gitlab CI', 'lib', require('./assets/images/techs/gitlab.png'), 'https://about.gitlab.com/gitlab-ci'),
                     new Skill('Gradle', 'lib', require('./assets/images/techs/gradle.png'), 'https://gradle.org'),
                     new Skill('Jenkins', 'lib', require('./assets/images/techs/jenkins.png'), 'https://jenkins.io'),
                     new Skill('JQuery', 'lib', require('./assets/images/techs/jquery.png'), 'https://jquery.com'),
-                    new Skill('Mocha', 'lib', require('./assets/images/techs/mocha.png'), 'https://mochajs.org'),
                     new Skill('NodeJS', 'lib', require('./assets/images/techs/nodejs.png'), 'https://nodejs.org'),
+                    new Skill('MongoDB', 'db', require('./assets/images/techs/mongodb.png'), 'https://www.mongodb.com/'),
                     new Skill('Numpy', 'lib', require('./assets/images/techs/numpy.png'), 'https://numpy.org'),
+                    new Skill('Tensorflow', 'lib', require('./assets/images/techs/tensorflow.png'), 'https://www.tensorflow.org/'),
+                    new Skill('Flask', 'lib', require('./assets/images/techs/flask.png'), 'http://flask.pocoo.org/'),
                     new Skill('PixiJS', 'lib', require('./assets/images/techs/pixi.png'), 'https://pixijs.com'),
-                    new Skill('Qunit', 'lib', require('./assets/images/techs/qunit.png'), 'https://qunitjs.com'),
                     new Skill('Terraform', 'lib', require('./assets/images/techs/terraform.png'), 'https://terraform.io'),
                     new Skill('ThreeJS', 'lib', require('./assets/images/techs/three.png'), 'https://threejs.org'),
                     new Skill('Linux', 'lib', require('./assets/images/techs/tux.png'), 'https://linux.org'),
@@ -253,7 +270,7 @@ export default {
                 new Project(
                   'WAToPlan',
                   '',
-                  ['Mobile', 'Cross-platform', 'Flutter'],
+                  [ 'Mobile', 'Cross-platform', 'Flutter' ],
                   [
                     {
                       needsFull: true,
@@ -265,7 +282,7 @@ export default {
                 new Project(
                   'Defense Matrix',
                   'desc',
-                  ['Security', 'Linux'],
+                  [ 'Security', 'Linux' ],
                   [
                     {
                       img: require('./assets/images/projects/defmatrix01.png')
@@ -276,7 +293,7 @@ export default {
                 new Project(
                   'Population: Flappy',
                   '',
-                  ['Machine Learning', 'PixiJS'],
+                  [ 'Machine Learning', 'PixiJS' ],
                   [
                     {
                       img: require('./assets/images/projects/flappy01.png')
@@ -287,7 +304,7 @@ export default {
                 new Project(
                   'Custom Quadcopter',
                   '',
-                  ['Hardware', 'Robotics'],
+                  [ 'Hardware', 'Robotics' ],
                   [
                     {
                       img: require('./assets/images/projects/quadcopter01.jpg')
@@ -298,7 +315,7 @@ export default {
                 new Project(
                   'Custom PCs',
                   '',
-                  ['Hardware', 'Computing'],
+                  [ 'Hardware', 'Computing' ],
                   [
                     {
                       img: require('./assets/images/projects/pc01.jpg')
@@ -309,7 +326,7 @@ export default {
                 new Project(
                   'Tanks',
                   '',
-                  ['Python', 'Game Development'],
+                  [ 'Python', 'Game Development' ],
                   [
                     {
                       needsFull: true,
@@ -321,7 +338,7 @@ export default {
                 new Project(
                   'Admonere',
                   '',
-                  ['Android', 'Kotlin'],
+                  [ 'Android', 'Kotlin' ],
                   [
                     {
                       needsFull: true,
@@ -333,7 +350,7 @@ export default {
                 new Project(
                   'Limen',
                   '',
-                  ['Scripting', 'Serverside'],
+                  [ 'Scripting', 'Serverside' ],
                   [
                     {
                       img: require('./assets/images/projects/limen01.png')
@@ -344,7 +361,7 @@ export default {
                 new Project(
                   'Synk',
                   '',
-                  ['Collaboration Software', 'Python'],
+                  [ 'Collaboration Software', 'Python' ],
                   [
                     {
                       img: require('./assets/images/projects/synk01.jpg')
@@ -352,6 +369,28 @@ export default {
                   ],
                   'https://devpost.com/software/synk-ronized-programming'
                 ),
+                // new Project(
+                //   'Countdown Manager',
+                //   '',
+                //   [ 'Vue', 'Productivity' ],
+                //   [
+                //     {
+                //       img: require('./assets/images/projects/countdown.png')
+                //     }
+                //   ],
+                //   'https://github.com/eternali/countdown_manager'
+                // ),
+                // new Project(
+                //   'Tic Tac Throw',
+                //   '',
+                //   [ 'Flutter', 'Game Development' ],
+                //   [
+                //     {
+                //       img: require('./assets/images/projects/tictacthrow.png')
+                //     }
+                //   ],
+                //   'https://github.com/eternali/tictacthrow'
+                // ),
               ] }
             />
             <ContactMe
