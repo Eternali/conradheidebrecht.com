@@ -369,28 +369,29 @@ export default {
                   ],
                   'https://devpost.com/software/synk-ronized-programming'
                 ),
-                // new Project(
-                //   'Countdown Manager',
-                //   '',
-                //   [ 'Vue', 'Productivity' ],
-                //   [
-                //     {
-                //       img: require('./assets/images/projects/countdown.png')
-                //     }
-                //   ],
-                //   'https://github.com/eternali/countdown_manager'
-                // ),
-                // new Project(
-                //   'Tic Tac Throw',
-                //   '',
-                //   [ 'Flutter', 'Game Development' ],
-                //   [
-                //     {
-                //       img: require('./assets/images/projects/tictacthrow.png')
-                //     }
-                //   ],
-                //   'https://github.com/eternali/tictacthrow'
-                // ),
+                new Project(
+                  'Countdown Manager',
+                  '',
+                  [ 'Vue', 'Productivity' ],
+                  [
+                    {
+                      img: require('./assets/images/projects/countdown_manager.png')
+                    }
+                  ],
+                  'https://github.com/eternali/countdown_manager'
+                ),
+                new Project(
+                  'Tic Tac Throw',
+                  '',
+                  [ 'Flutter', 'Game Development' ],
+                  [
+                    {
+                      needsFull: true,
+                      img: require('./assets/images/projects/tictacthrow.png')
+                    }
+                  ],
+                  'https://github.com/eternali/tictacthrow'
+                ),
               ] }
             />
             <ContactMe
